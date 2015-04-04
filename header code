@@ -1,0 +1,33 @@
+header .fullheight .hgroup h1 {
+  color: #e3e5e5;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+
+header .fullheight .hgroup h2 {
+  display: block;
+  color: #e3e5e5;
+  width: 60%;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #e3e5e5;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+
+header .fullheight .hgroup p {
+  text-align: center;
+}
+header .fullheight .hgroup p img {
+  padding-top: 50px;
+  max-width: 50px;
+}
+header .fullheight .hgroup {
+  padding: 0;
+}
