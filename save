@@ -1,0 +1,98 @@
+
+video#bgvid {
+
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+}
+
+<video autoplay loop poster="polina.jpg" id="bgvid">
+<source src="polina.webm" type="video/webm">
+<source src="polina.mp4" type="video/mp4">
+</video>
+
+
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/union/barrister.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+fmstill3
+
+var  map2 = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    var polygonCoords = [
+      new google.maps.LatLng(42.380274, -71.089987),
+      new google.maps.LatLng(42.377326, -71.089321),
+      new google.maps.LatLng(42.375293, -71.085700),
+      new google.maps.LatLng(42.374595, -71.086881),
+      new google.maps.LatLng(42.374278, -71.087181),
+      new google.maps.LatLng(42.373422, -71.087503),
+      new google.maps.LatLng(42.373953, -71.089509),
+      new google.maps.LatLng(42.374239, -71.094756),
+      new google.maps.LatLng(42.376078, -71.095335),
+      new google.maps.LatLng(42.376117, -71.095710),
+      new google.maps.LatLng(42.376339, -71.095721),
+      new google.maps.LatLng(42.376403, -71.096054,
+      new google.maps.LatLng(42.376799, -71.095786),
+      new google.maps.LatLng(42.376720, -71.096376),
+      new google.maps.LatLng(42.377092, -71.096397),
+      new google.maps.LatLng(42.377282, -71.096097),
+      new google.maps.LatLng(42.377504, -71.096258),
+      new google.maps.LatLng(42.377829, -71.095989),
+      new google.maps.LatLng(42.379541, -71.096472),
+      new google.maps.LatLng(42.379279, -71.098672),
+      new google.maps.LatLng(42.379279, -71.098672),
+      new google.maps.LatLng(42.379723, -71.098918),
+      new google.maps.LatLng(42.380032, -71.098833),
+      new google.maps.LatLng(42.380143, -71.099154),
+      new google.maps.LatLng(42.380429, -71.099133),
+      new google.maps.LatLng(42.380936, -71.098875),
+      new google.maps.LatLng(42.381380, -71.098296),
+      new google.maps.LatLng(42.381293, -71.098017),
+      new google.maps.LatLng(42.381522, -71.097770),
+      new google.maps.LatLng(42.381269, -71.097330),
+      new google.maps.LatLng(42.381530, -71.097052),
+      new google.maps.LatLng(42.381562, -71.096697),
+      new google.maps.LatLng(42.381261, -71.095989),
+      new google.maps.LatLng(42.380746, -71.095324),
+      new google.maps.LatLng(42.380405, -71.095721),
+      new google.maps.LatLng(42.380207, -71.095539),
+      new google.maps.LatLng(42.380207, -71.095539),
+      new google.maps.LatLng(42.380032, -71.094466),
+      new google.maps.LatLng(42.379636, -71.094638),
+      new google.maps.LatLng(42.379636, -71.094015),
+      new google.maps.LatLng(42.380627, -71.093672),
+      new google.maps.LatLng(42.380365, -71.092728),
+      new google.maps.LatLng(42.379890, -71.092921),
+      new google.maps.LatLng(42.379834, -71.092674),
+      new google.maps.LatLng(42.380096, -71.092567),
+      new google.maps.LatLng(42.380088, -71.092095),
+      new google.maps.LatLng(42.379501, -71.092234),
+      new google.maps.LatLng(42.379478, -71.092020),
+      new google.maps.LatLng(42.379739, -71.090979),
+      new google.maps.LatLng(42.379977, -71.090378)
+
+  ];
+
+  // Construct the polygon.
+  var unionPolygon = new google.maps.Polygon({
+    paths: polygonCoords,
+    strokeColor: '#000',
+    strokeOpacity: 0.8,
+    strokeWeight: 3
+  });
+  unionPolygon.setMap(map);
