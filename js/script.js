@@ -662,18 +662,13 @@ $(document).ready(function() {
       }
     });*/
 
-});
-
-/*$(window).scroll(function () {
+});$(window).scroll(function () {
         if( $(this).scrollTop() > 0) {
           nt.addClass("nav-scrolled");
           n.addClass("nav-scrolled");
-
-
         } else {
           nt.addClass("nav-scrolled");
           n.addClass("nav-scrolled");
-
         }
       });
 /*$(window).resize(function() {
