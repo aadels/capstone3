@@ -28,9 +28,8 @@ $(function() {
   $('#width').text(wwidth);
   $('#height').text(wheight);
 
-
-
 }) //on resize
+
 //$("#mainlogo").bind("load", function () { $(this).fadeIn("slow"); });
 $('#opener1').hide().delay(500).fadeIn(1000);
 $('#opener1').delay(7000).fadeOut(1000);
