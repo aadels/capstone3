@@ -321,7 +321,8 @@ article:after {
   background-position: center center;
   background-repeat: no-repeat;
 }
-#opener .fadeimg .openertext {
+
+#opener .fadeimg .openertext{
   width: 70%;
   position: absolute;
   left: 15%;
@@ -374,7 +375,7 @@ article:after {
 }
 
 
-#maps, #housing, #transit, #market1, #market2, #market3 {
+#maps, #housing, #transit, #market1, #market2, #market3, #train1, #train2, #train3 {
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -387,7 +388,7 @@ article:after {
   overflow: hidden;
 }
 
-#market1 > div, #market2 > div, #market3 > div, #maps > div, #housing > div, #transit > div  {
+#market1 > div, #market2 > div, #market3 > div, #maps > div, #housing > div, #transit > div, #train1 > div, #train2 > div, #train3 > div  {
   position: relative;
   height: 200%;
   -webkit-transform: translateZ(0);
@@ -432,13 +433,63 @@ article:after {
   overflow: hidden;
   padding: 0;
   z-index: 1;
-  background-image: url("../images/union/oldunion.jpg");
+  background-image: url("../images/header/blue.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 
+#train .fadeimg .traintext{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  z-index: 4;
+  position: absolute;
+}
+
+#train:before, #events:after {
+  content: '';
+  display: table;
+}
+
+#train:after {
+  clear: both;
+}
+
+#train .fadeimg .openertext{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  z-index: 4;
+  position: absolute;
+}
+
+#trainslide{
+   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/titlewalls/traincoming.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#trainslide:before, #events:after {
+  content: '';
+  display: table;
+}
+
+#trainslide:after {
+  clear: both;
+}
 #business {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -477,24 +528,30 @@ article:after {
   overflow: hidden;
 }
 
-        <img id="cafe" class="slidepic9" src="images/trains/bus.jpg">  
-#community .lgpic3, #community .lgpic2, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #train .slidepic7, #train .slidepic8, #train .slidepic9,  {
+#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10, #train .slidepic11{
   position: absolute;
   width: 100%;
   height: auto;
   overflow: hidden;
   bottom: 0;
 }
+
 #business .slidepic6 {
   position: absolute;
   width: 100%;
   height: auto;
   overflow: hidden;
-
+}
+#train .slidepic11{
+  position: absolute;
+  float:left;
+  width: 70%;
+  height: auto;
+  overflow: hidden;
 }
 
 
-img#playicon {
+img#playicon, img#playicon2 {
   position: absolute;
 }
 #events .text{
@@ -525,11 +582,11 @@ img#playicon {
 }
 
 
-#tour1:after {
+#tour2:after, #tour1:after {
   clear: both;
 }
 
-#tour2:after {
+#tour2:after, #tour1:after{
   clear: both;
 }
 
@@ -541,27 +598,39 @@ img#playicon {
   border-width: medium;
   border-color: #fff;
 } 
-
-#tour1 #mapvid {  
+ 
+#tour1 #mapvid1 {  
   width: 50%;
   height: 100%;
   float: right;
   border-style: solid;
   border-width: medium;
   border-color: #fff;
+  background-image: url("../images/map/uumappic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 } 
 
-#tour2 #map3 {  
-
+#tour2 #map2 {  
+  width: 50%;
   height: 100%;
-  width: 100%;
+  float: right;
   border-style: solid;
   border-width: medium;
   border-color: #fff;
-  overflow: hidden;
+}  
 
-} 
-
+#tour2 #mapvid2 {  
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-style: solid;
+  border-width: medium;
+  border-color: #fff;
+  background-image: url("../images/map/sbdmappic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 footer {
   max-width: 100%;
@@ -637,5 +706,11 @@ video#bgvid2 {
  
   min-width: 100%; min-height: 100%;
   background: url(../images/farmersmarket/fmstill4.jpg) no-repeat;
+  background-size: cover;
+}
+
+video#busclip2 { 
+  min-width: 100%; min-height: 100%;
+  background: url(../video/train/busclip2still.jpg) no-repeat;
   background-size: cover;
 }
