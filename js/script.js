@@ -290,14 +290,12 @@ $w.on("scroll", function(e){
       ease: Cubic.easeOut  
     }); 
 
-    var traintween6 = TweenMax.staggerFromTo('#train .slidepic10', 4, 
+    var traintween6 = TweenMax.staggerFromTo('#train .slidepic10', 2, 
     { 
-      bottom: -150 + "%", 
-      right: 0 + "%"
+      left: 125 + "%"
     }, 
     {
-      bottom: 0 + "%",
-      right: 0 + "%",
+      left: 0 + "%",
       delay: 10,
       ease: Cubic.easeOut
     }); 
@@ -317,7 +315,7 @@ $w.on("scroll", function(e){
 
 
 
-    var scene3a = new ScrollScene({triggerElement: '#train', duration: 160000}) 
+    var scene3a = new ScrollScene({triggerElement: '#train', duration: 125000}) 
       .setPin("#train")
       .addTo(controller2);
     
@@ -341,8 +339,8 @@ $w.on("scroll", function(e){
       .setTween(traintween5)
       .addTo(controller2);
 
-    var scene3g = new ScrollScene({triggerElement: '#train', duration: 90000}) 
-      .setTween(traintween5)
+    var scene3g = new ScrollScene({triggerElement: '#train', duration: 105000}) 
+      .setTween(traintween6)
       .addTo(controller2);
 
 

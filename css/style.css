@@ -519,7 +519,7 @@ article:after {
   overflow: hidden;
 }
 
-#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9{
+#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10 {
   position: absolute;
   width: 100%;
   height: auto;
@@ -527,7 +527,7 @@ article:after {
   bottom: 0;
 }
 
-#business .slidepic6, #train .slidepic10 {
+#business .slidepic6{
   position: absolute;
   width: 100%;
   height: auto;
