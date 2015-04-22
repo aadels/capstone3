@@ -35,24 +35,17 @@ $(function() {
 
 //$("#mainlogo").bind("load", function () { $(this).fadeIn("slow"); });
 $('#opener1').hide().delay(500).fadeIn(1000);
-$('#opener1').delay(7000).fadeOut(1000);
-$('#opener2').hide().delay(10000).fadeIn(1000);
-$('#opener2').delay(7000).fadeOut(1000);
-$('#opener3').hide().delay(20000).fadeIn(1000);
-$('#opener3').delay(7000).fadeOut(1000);
+$('#opener1').delay(8000).fadeOut(1000);
+$('#opener2').hide().delay(11000).fadeIn(1000);
+$('#opener2').delay(8000).fadeOut(1000);
+$('#opener3').hide().delay(22000).fadeIn(1000);
+$('#opener3').delay(5000).fadeOut(1000);
 
 
 $('#roads').hide().delay(30000).fadeIn(1000);
 $('#mainlogo').hide().delay(33000).fadeIn(500);
 $('#star').hide().delay(33500).fadeIn(10);
 $('#scroll').hide().delay(34500).fadeIn(500);
-
-$('#traintext1').hide().delay(500).fadeIn(1000);
-$('#traintext1').delay(9000).fadeOut(1000);
-$('#traintext2').hide().delay(12000).fadeIn(1000);
-$('#traintext2').delay(9000).fadeOut(1000);
-$('#traintext3').hide().delay(26000).fadeIn(1000);
-$('#traintext3').delay(9000).fadeOut(1000);
 
 
 // Animated Scrolling
@@ -246,19 +239,18 @@ $w.on("scroll", function(e){
 
     //traintweens
    
-    var traintween1 = TweenMax.staggerFromTo('#train .slidepic7', 7, 
+    var traintween1 = TweenMax.staggerFromTo('#train #traintext1', 4, 
     { 
-      right: 0 + "%",
-      opacity: 0
+      right: 125 + "%"
     }, 
     {
-      right: 0 + "%",
-      opacity: 100,
-      delay: 20,
+      right: 50 + "%",
+      delay: 10,
+      ease: Cubic.easeOut
     
     });
 
-    var traintween2 = TweenMax.staggerFromTo('#train .slidepic8', 2, 
+    var traintween2 = TweenMax.staggerFromTo('#train .slidepic8', 4, 
     { 
       left: 125 + "%" 
     }, 
@@ -267,8 +259,177 @@ $w.on("scroll", function(e){
       delay: 16,
       ease: Cubic.easeOut
     });
+
+    var traintween3 = TweenMax.staggerFromTo('#train #traintext2', 4, 
+    { 
+      left: 125 + "%"
+    }, 
+    {
+      left: 50 + "%",
+      delay: 10,
+      ease: Cubic.easeOut
+    });
+
+    var traintween4 = TweenMax.staggerFromTo('#train .slidepic9', 4, 
+    { 
+      right: 125 + "%"
+    }, 
+    {
+      right: 0 + "%",
+      delay: 16,
+      ease: Cubic.easeOut
+    }); 
+
+    var traintween5 = TweenMax.staggerFromTo('#train #traintext3', 4, 
+    {  
+      right: 125 + "%"
+    }, 
+    {
+      right: 50 + "%",
+      delay: 10,
+      ease: Cubic.easeOut  
+    }); 
+
+    var traintween6 = TweenMax.staggerFromTo('#train .slidepic10', 4, 
+    { 
+      bottom: -150 + "%", 
+      right: 0 + "%"
+    }, 
+    {
+      bottom: 0 + "%",
+      right: 0 + "%",
+      delay: 10,
+      ease: Cubic.easeOut
+    }); 
+
+    var playertween2 = TweenMax.staggerFromTo('#trainslide #playicon2', 3, 
+    { 
+      right: 125 + "%", 
+      bottom: 70 + "%"
+    }, 
+    {
+      right: 70 + "%",
+      bottom: 60 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+
+
+
+    var scene3a = new ScrollScene({triggerElement: '#train', duration: 160000}) 
+      .setPin("#train")
+      .addTo(controller2);
     
-    var traintween3 = TweenMax.staggerFromTo('#train .slidepic9', 4, 
+    var scene3b = new ScrollScene({triggerElement: '#train', duration: 6000}) 
+      .setTween(traintween1)
+      .addTo(controller2);
+    
+    var scene3c = new ScrollScene({triggerElement: '#train', duration: 22000}) 
+      .setTween(traintween2)
+      .addTo(controller2);
+
+    var scene3d = new ScrollScene({triggerElement: '#train', duration: 35000}) 
+      .setTween(traintween3)
+      .addTo(controller2);
+        
+    var scene3e = new ScrollScene({triggerElement: '#train', duration: 55000}) 
+      .setTween(traintween4)
+      .addTo(controller2);
+
+    var scene3f = new ScrollScene({triggerElement: '#train', duration: 80000}) 
+      .setTween(traintween5)
+      .addTo(controller2);
+
+    var scene3g = new ScrollScene({triggerElement: '#train', duration: 90000}) 
+      .setTween(traintween5)
+      .addTo(controller2);
+
+
+    var scene4a = new ScrollScene({triggerElement: '#trainslide', duration: 11000}) 
+      .setPin("#trainslide")
+      .addTo(controller2);
+
+    var scene4b = new ScrollScene({triggerElement: '#trainslide', duration: 6000}) 
+      .setTween(playertween2)
+      .addTo(controller2);
+
+   
+    /*var scene4b = new ScrollScene({triggerElement: '#tour2', duration: 500}) 
+      .setPin("#tour2")
+      .addTo(controller2);*/
+ //business tweens
+    var colortween1 = TweenMax.staggerFromTo('#business .colorpic1', 7, 
+    { 
+      opacity: 0
+    }, 
+    {
+      opacity: .75,
+      delay: 2,
+    });
+    var slidetween1 = TweenMax.staggerFromTo('#business .slidepic2', 6, 
+    { 
+      right: 125 + "%" 
+    }, 
+    {
+      right: 0 + "%",
+      delay: 4,
+      ease: Cubic.easeOut
+    });
+
+    var colortween2 = TweenMax.staggerFromTo('#business .colorpic2', 7, 
+    { 
+      right: 0 + "%",
+      opacity: 0
+    }, 
+    {
+      right: 0 + "%",
+      opacity: .75,
+      delay: 8,
+    });
+
+    var bwtween1 = TweenMax.staggerFromTo('#business .bwpic1', 3, 
+    { 
+      left: 150 + "%" 
+    }, 
+    {
+      left:75 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var bwtween2 = TweenMax.staggerFromTo('#business .bwpic2', 7, 
+    { 
+      left:150 + "%"
+
+    }, 
+    {
+      left:50 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var bwtween3 = TweenMax.staggerFromTo('#business .bwpic3', 11, 
+    { 
+      left:150 + "%"
+    }, 
+    {
+      left: 25 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var bwtween4 = TweenMax.staggerFromTo('#business .bwpic4', 15, 
+    { 
+      left:150 + "%"
+    }, 
+    {
+      left: 0 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var amestween1 = TweenMax.staggerFromTo('#business .slidepic3', 6, 
     { 
       left: 0 + "%",
       top: -150 + "%" 
@@ -280,61 +441,215 @@ $w.on("scroll", function(e){
       ease: Cubic.easeOut
     });
 
-    var traintween4 = TweenMax.staggerFromTo('#train .slidepic10', 4, 
+    var amestween2 = TweenMax.staggerFromTo('#business .amespic1', 3, 
+    { 
+      bottom: -150 + "%", 
+      right: 75 + "%" 
+    }, 
+    {
+      bottom: 0,
+      right: 75 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var amestween3 = TweenMax.staggerFromTo('#business .amespic2', 7, 
+    { 
+      top: -150 + "%",
+      right:50 + "%"
+
+    }, 
+    {
+      top: 0 + "%" ,
+      right: 50 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var amestween4 = TweenMax.staggerFromTo('#business .amespic3', 11, 
+    { 
+      bottom: -150 + "%",
+      right: 25 + "%" 
+    }, 
+    {
+      bottom: 0,
+      right: 25 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var amestween5 = TweenMax.staggerFromTo('#business .amespic4', 15, 
+    { 
+      top: -150 + "%",
+      right: 0 + "%"
+    }, 
+    {
+      top: 0 + "%" ,      
+      right: 0 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var buildingtween1 = TweenMax.staggerFromTo('#business .slidepic4', 2, 
+    { 
+      left: 125 + "%" 
+    }, 
+    {
+      left: 0 + "%",
+      delay: 5,
+      ease: Cubic.easeOut
+    });
+
+    var arttween1 = TweenMax.staggerFromTo('#business .slidepic5', 2, 
     { 
       right: 125 + "%" 
     }, 
     {
       right: 0 + "%",
-      delay: 16,
+      delay: 5,
       ease: Cubic.easeOut
     });
 
-    var playertween2 = TweenMax.staggerFromTo('#trainslide #playicon2', 3, 
+
+    var arttween2 = TweenMax.staggerFromTo('#business .slidepic6', 2, 
     { 
-      right: 125 + "%", 
-      bottom: 70 + "%"
+      right: 0 + "%",
+      bottom: -200 + "%" 
     }, 
     {
-      right: 70 + "%",
-      bottom: 70 + "%",
+      right: 0 + "%",
+      bottom: 101 + "%",
+      delay: 5,
+      ease: Cubic.easeOut
+    });
+
+
+    var buildingtween2 = TweenMax.staggerFromTo('#business .bldgpic1', 3, 
+    { 
+      right: 150 + "%" 
+    }, 
+    {
+      right:75 + "%",
       delay: 15,
       ease: Cubic.easeOut
     });
 
+    var buildingtween3 = TweenMax.staggerFromTo('#business .bldgpic2', 7, 
+    { 
+      right:150 + "%"
+
+    }, 
+    {
+      right:50 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var buildingtween4 = TweenMax.staggerFromTo('#business .bldgpic3', 11, 
+    { 
+      right:150 + "%"
+    }, 
+    {
+      right: 25 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var buildingtween5 = TweenMax.staggerFromTo('#business .bldgpic4', 15, 
+    { 
+      right:150 + "%"
+    }, 
+    {
+      right: 0 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+  
+    //Create scenes, set pins, trigger when images are visible, and add to controller
+    var scene3 = new ScrollScene({triggerElement: '#business', duration: 1010000}) 
+      .setPin("#business")
+      .addTo(controller2);
+
+    var scene3a = new ScrollScene({triggerElement: '#business', duration: 6000}) 
+      .setTween(colortween1)
+      .addTo(controller2);
+
+    var scene3b = new ScrollScene({triggerElement: '#business', duration: 13000}) 
+      .setTween(slidetween1)
+      .addTo(controller2);
+
+    var scene3c = new ScrollScene({triggerElement: '#business', duration: 25000}) 
+      .setTween(colortween2)
+      .addTo(controller2);
+
+    var scene3d = new ScrollScene({triggerElement: '#business', duration: 27000}) 
+      .setTween(bwtween1)
+      .addTo(controller2);
 
 
-    var scene3a = new ScrollScene({triggerElement: '#train', duration: 25000}) 
-      .setPin("#train")
-      .addTo(controller2);
-    
-    var scene3d = new ScrollScene({triggerElement: '#train', duration: 5000}) 
-      .setTween(traintween1)
-      .addTo(controller2);
-    
-    var scene3e = new ScrollScene({triggerElement: '#train', duration: 8000}) 
-      .setTween(traintween2)
+    var scene3e = new ScrollScene({triggerElement: '#business', duration: 28000}) 
+      .setTween(bwtween2)
       .addTo(controller2);
 
-    var scene3f = new ScrollScene({triggerElement: '#train', duration: 11000}) 
-      .setTween(traintween3)
-      .addTo(controller2);
-        
-    var scene3g = new ScrollScene({triggerElement: '#train', duration: 14000}) 
-      .setTween(traintween4)
+    var scene3f = new ScrollScene({triggerElement: '#business', duration: 29000}) 
+      .setTween(bwtween3)
       .addTo(controller2);
 
-   var scene4 = new ScrollScene({triggerElement: '#trainslide', duration: 8000}) 
-      .setPin("#trainslide")
+    var scene3g = new ScrollScene({triggerElement: '#business', duration: 30000}) 
+      .setTween(bwtween4)
       .addTo(controller2);
 
-    var scene4a = new ScrollScene({triggerElement: '#trainslide', duration: 5000}) 
-      .setTween(playertween2)
+    var scene3h = new ScrollScene({triggerElement: '#business', duration: 40000}) 
+      .setTween(amestween1)
       .addTo(controller2);
-        
-    /*var scene4b = new ScrollScene({triggerElement: '#tour2', duration: 500}) 
-      .setPin("#tour2")
-      .addTo(controller2);*/
+
+    var scene3i = new ScrollScene({triggerElement: '#business', duration: 60000}) 
+      .setTween(amestween2)
+      .addTo(controller2);
+
+    var scene3j = new ScrollScene({triggerElement: '#business', duration: 63000}) 
+      .setTween(amestween3)
+      .addTo(controller2);
+
+    var scene3k = new ScrollScene({triggerElement: '#business', duration: 66000}) 
+      .setTween(amestween4)
+      .addTo(controller2);
+
+    var scene3l = new ScrollScene({triggerElement: '#business', duration: 69000}) 
+      .setTween(amestween5)
+      .addTo(controller2);
+
+    var scene3m = new ScrollScene({triggerElement: '#business', duration: 100000}) 
+      .setTween(buildingtween1)
+      .addTo(controller2);
+
+    var scene3n = new ScrollScene({triggerElement: '#business', duration: 200000}) 
+      .setTween(arttween1)
+      .addTo(controller2);
+
+
+    var scene3p = new ScrollScene({triggerElement: '#business', duration: 300000}) 
+      .setTween(arttween2)
+      .addTo(controller2);
+
+    var scene3r = new ScrollScene({triggerElement: '#business', duration: 600000}) 
+      .setTween(buildingtween2)
+      .addTo(controller2);
+
+    var scene3s = new ScrollScene({triggerElement: '#business', duration: 601000}) 
+      .setTween(buildingtween3)
+      .addTo(controller2);
+
+    var scene3t = new ScrollScene({triggerElement: '#business', duration: 602000}) 
+      .setTween(buildingtween4)
+      .addTo(controller2);
+
+    var scene3u = new ScrollScene({triggerElement: '#business', duration: 603000}) 
+      .setTween(buildingtween5)
+      .addTo(controller2);
+
+
 
     // init controller for parallax
     var controller = new ScrollMagic({
@@ -353,21 +668,6 @@ $w.on("scroll", function(e){
     new ScrollScene({triggerElement: "#market3"})
             .setTween(TweenMax.from("#market3 > div", 1, {top: "-60%", ease: Linear.easeNone}))
             .addTo(controller);
-
-    new ScrollScene({triggerElement: "#train1"})
-            .setTween(TweenMax.from("#train1 > div", 1, {top: "-60%", ease: Linear.easeNone}))
-            .addTo(controller);
-
-    new ScrollScene({triggerElement: "#train2"})
-            .setTween(TweenMax.from("#train2 > div", 1, {top: "-60%", ease: Linear.easeNone}))
-            .addTo(controller);
-    
-    new ScrollScene({triggerElement: "#train3"})
-            .setTween(TweenMax.from("#train3 > div", 1, {top: "-60%", ease: Linear.easeNone}))
-            .addTo(controller);
-
-  
-
 });
 
 //redraw map on resize
@@ -472,9 +772,9 @@ var nt = $('.navtab');
 var vp = $('#viewport');
 
 $(document).ready(function() {
-        $('.navtab').click(function() {
-          $('.navbar').slideToggle();
-            $('.navbar').css('display: block');
+  $('.navtab').click(function() {
+  $('.navbar').slideToggle();
+  $('.navbar').css('display: block');
 
         });
     

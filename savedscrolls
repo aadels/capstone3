@@ -427,4 +427,28 @@ EVERYTHING ELSE HTML
 
     42.385138, -71.094148
 <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..."></iframe
+src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..."></iframe>var arttween2 = TweenMax.staggerFromTo('#business .artlogo1', 2, 
+    
+
+    { 
+      left: 0 + "%" ,
+      top: -50 + "%",
+      opacity:1
+    }, 
+    {
+      left: 0 + "%",
+      top: 0 + "%",
+      delay: 5,
+      opacity:1,
+      ease: Cubic.easeOut
+    },
+        {
+      left: 0 + "%",
+      top: 0 + "%",
+      opacity:0,
+      delay: 5,
+      ease: Cubic.easeOut
+    });
+
+
+

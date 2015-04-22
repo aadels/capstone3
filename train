@@ -1,0 +1,59 @@
+ <div class="fullwidth"> 
+          <img id="50sunion" class="slidepic9" src="images/train/50sunion.jpg">  
+      </div>
+
+      <div class="fullwidth"> 
+          <img id="oldbus" class="slidepic10" src="images/train/bus.jpg">  
+      </div>
+
+          var traintween3 = TweenMax.staggerFromTo('#train .slidepic9', 4, 
+    { 
+      left: 0 + "%",
+      top: -150 + "%" 
+    }, 
+    {
+      left: 0 + "%",
+      top: 0 + "%" ,
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var traintween4 = TweenMax.staggerFromTo('#train .slidepic10', 4, 
+    { 
+      right: 125 + "%" 
+    }, 
+    {
+      right: 0 + "%",
+      delay: 16,
+      ease: Cubic.easeOut
+    });
+
+    var playertween2 = TweenMax.staggerFromTo('#trainslide #playicon2', 3, 
+    { 
+      right: 125 + "%", 
+      bottom: 70 + "%"
+    }, 
+    {
+      right: 70 + "%",
+      bottom: 70 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+
+ var scene3f = new ScrollScene({triggerElement: '#train', duration: 11000}) 
+      .setTween(traintween3)
+      .addTo(controller2);
+        
+    var scene3g = new ScrollScene({triggerElement: '#train', duration: 14000}) 
+      .setTween(traintween4)
+      .addTo(controller2);
+
+   var scene4 = new ScrollScene({triggerElement: '#trainslide', duration: 8000}) 
+      .setPin("#trainslide")
+      .addTo(controller2);
+
+    var scene4a = new ScrollScene({triggerElement: '#trainslide', duration: 5000}) 
+      .setTween(playertween2)
+      .addTo(controller2);
+        
