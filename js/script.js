@@ -353,7 +353,7 @@ $w.on("scroll", function(e){
       .addTo(controller2);
 
    
-    /*var scene4b = new ScrollScene({triggerElement: '#tour2', duration: 500}) 
+    /*var scene4b = new ScrollScene({triggerElement: '#tour1', duration: 500}) 
       .setPin("#tour2")
       .addTo(controller2);*/
  //business tweens
@@ -565,85 +565,85 @@ $w.on("scroll", function(e){
 
   
     //Create scenes, set pins, trigger when images are visible, and add to controller
-    var scene3 = new ScrollScene({triggerElement: '#business', duration: 1010000}) 
+    var scene5 = new ScrollScene({triggerElement: '#business', duration: 1010000}) 
       .setPin("#business")
       .addTo(controller2);
 
-    var scene3a = new ScrollScene({triggerElement: '#business', duration: 6000}) 
+    var scene5a = new ScrollScene({triggerElement: '#business', duration: 6000}) 
       .setTween(colortween1)
       .addTo(controller2);
 
-    var scene3b = new ScrollScene({triggerElement: '#business', duration: 13000}) 
+    var scene5b = new ScrollScene({triggerElement: '#business', duration: 13000}) 
       .setTween(slidetween1)
       .addTo(controller2);
 
-    var scene3c = new ScrollScene({triggerElement: '#business', duration: 25000}) 
+    var scene5c = new ScrollScene({triggerElement: '#business', duration: 25000}) 
       .setTween(colortween2)
       .addTo(controller2);
 
-    var scene3d = new ScrollScene({triggerElement: '#business', duration: 27000}) 
+    var scene5d = new ScrollScene({triggerElement: '#business', duration: 27000}) 
       .setTween(bwtween1)
       .addTo(controller2);
 
 
-    var scene3e = new ScrollScene({triggerElement: '#business', duration: 28000}) 
+    var scene5e = new ScrollScene({triggerElement: '#business', duration: 28000}) 
       .setTween(bwtween2)
       .addTo(controller2);
 
-    var scene3f = new ScrollScene({triggerElement: '#business', duration: 29000}) 
+    var scene5f = new ScrollScene({triggerElement: '#business', duration: 29000}) 
       .setTween(bwtween3)
       .addTo(controller2);
 
-    var scene3g = new ScrollScene({triggerElement: '#business', duration: 30000}) 
+    var scene5g = new ScrollScene({triggerElement: '#business', duration: 30000}) 
       .setTween(bwtween4)
       .addTo(controller2);
 
-    var scene3h = new ScrollScene({triggerElement: '#business', duration: 40000}) 
+    var scene5h = new ScrollScene({triggerElement: '#business', duration: 40000}) 
       .setTween(amestween1)
       .addTo(controller2);
 
-    var scene3i = new ScrollScene({triggerElement: '#business', duration: 60000}) 
+    var scene5i = new ScrollScene({triggerElement: '#business', duration: 60000}) 
       .setTween(amestween2)
       .addTo(controller2);
 
-    var scene3j = new ScrollScene({triggerElement: '#business', duration: 63000}) 
+    var scene5j = new ScrollScene({triggerElement: '#business', duration: 63000}) 
       .setTween(amestween3)
       .addTo(controller2);
 
-    var scene3k = new ScrollScene({triggerElement: '#business', duration: 66000}) 
+    var scene5k = new ScrollScene({triggerElement: '#business', duration: 66000}) 
       .setTween(amestween4)
       .addTo(controller2);
 
-    var scene3l = new ScrollScene({triggerElement: '#business', duration: 69000}) 
+    var scene5l = new ScrollScene({triggerElement: '#business', duration: 69000}) 
       .setTween(amestween5)
       .addTo(controller2);
 
-    var scene3m = new ScrollScene({triggerElement: '#business', duration: 100000}) 
+    var scene5m = new ScrollScene({triggerElement: '#business', duration: 100000}) 
       .setTween(buildingtween1)
       .addTo(controller2);
 
-    var scene3n = new ScrollScene({triggerElement: '#business', duration: 200000}) 
+    var scene5n = new ScrollScene({triggerElement: '#business', duration: 200000}) 
       .setTween(arttween1)
       .addTo(controller2);
 
 
-    var scene3p = new ScrollScene({triggerElement: '#business', duration: 300000}) 
+    var scene5p = new ScrollScene({triggerElement: '#business', duration: 300000}) 
       .setTween(arttween2)
       .addTo(controller2);
 
-    var scene3r = new ScrollScene({triggerElement: '#business', duration: 600000}) 
+    var scene5r = new ScrollScene({triggerElement: '#business', duration: 600000}) 
       .setTween(buildingtween2)
       .addTo(controller2);
 
-    var scene3s = new ScrollScene({triggerElement: '#business', duration: 601000}) 
+    var scene5s = new ScrollScene({triggerElement: '#business', duration: 601000}) 
       .setTween(buildingtween3)
       .addTo(controller2);
 
-    var scene3t = new ScrollScene({triggerElement: '#business', duration: 602000}) 
+    var scene5t = new ScrollScene({triggerElement: '#business', duration: 602000}) 
       .setTween(buildingtween4)
       .addTo(controller2);
 
-    var scene3u = new ScrollScene({triggerElement: '#business', duration: 603000}) 
+    var scene5u = new ScrollScene({triggerElement: '#business', duration: 603000}) 
       .setTween(buildingtween5)
       .addTo(controller2);
 
@@ -675,25 +675,25 @@ $(window).resize(function(){
 
 //add tour stops
   var locations = [
-    ['Union United', 42.381307, -71.099733, 1, 'https://player.vimeo.com/video/123591383', 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|cc3300|000000'],
-    ['Affordable Housing', 42.380508, -71.100172, 2,'https://player.vimeo.com/video/123645660','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|cc3300|000000'],
-    ['Local Jobs and Workers Rights', 42.380746,    -71.098092, 3,'https://player.vimeo.com/video/125298543','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|cc3300|000000'],
-    ['Small Business Protection', 42.38011, -71.097088, 4,'https://player.vimeo.com/video/125299384','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=4|cc3300|000000'],
-    ['History of Community Organizing', 42.379674, -71.096366, 5,'https://player.vimeo.com/video/124195710','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=5|cc3300|000000'],
-    ['Green Space', 42.377, -71.096093, 6,'https://player.vimeo.com/video/125300942','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=6|cc3300|000000'],
-    ['Green Line Extension', 42.376768, -71.095627, 7,'https://player.vimeo.com/video/124197491','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=7|cc3300|000000'],
-    ['Public Safety', 42.378882, -71.092666, 8,'https://player.vimeo.com/video/125362876','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=8|cc3300|000000'],
-    ['Arts, Culture and Community Resources', 42.379684, -71.093669, 9,'https://player.vimeo.com/video/125363521','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=9|cc3300|000000'],
-    ['Participatory Planning', 42.379332, -71.094231, 10,'https://player.vimeo.com/video/125364062','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=10|cc3300|000000']
+    ['Union United', 42.381307, -71.099733, 1, 'https://player.vimeo.com/video/123591383', 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|cc6666|000000'],
+    ['Affordable Housing', 42.380508, -71.100172, 2,'https://player.vimeo.com/video/123645660','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|cc6666|000000'],
+    ['Local Jobs and Workers Rights', 42.380746,    -71.098092, 3,'https://player.vimeo.com/video/125298543','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|cc6666|000000'],
+    ['Small Business Protection', 42.38011, -71.097088, 4,'https://player.vimeo.com/video/125299384','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=4|cc6666|000000'],
+    ['History of Community Organizing', 42.379674, -71.096366, 5,'https://player.vimeo.com/video/124195710','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=5|cc6666|000000'],
+    ['Green Space', 42.377, -71.096093, 6,'https://player.vimeo.com/video/125300942','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=6|cc6666|000000'],
+    ['Green Line Extension', 42.376768, -71.095627, 7,'https://player.vimeo.com/video/124197491','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=7|cc6666|000000'],
+    ['Public Safety', 42.378882, -71.092666, 8,'https://player.vimeo.com/video/125362876','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=8|cc6666|000000'],
+    ['Arts, Culture and Community Resources', 42.379684, -71.093669, 9,'https://player.vimeo.com/video/125363521','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=9|cc6666|000000'],
+    ['Participatory Planning', 42.379332, -71.094231, 10,'https://player.vimeo.com/video/125364062','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=10|cc6666|000000']
   ];
 
 var locations2 = [
-    ['Old Post Office', 42.379628, -71.093640, 1, 'https://player.vimeo.com/video/123591383', 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|cc3300|000000'],
-    ['Parcels D2, D6', 42.378614, -71.094584, 2,'https://player.vimeo.com/video/123645660','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|cc3300|000000'],
-    ['Parcels D3, D4', 42.377290, -71.095496, 3,'https://player.vimeo.com/video/125298543','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|cc3300|000000'],
-    ['Washington St. & Somerville Ave.', 42.379834, -71.096418, 4,'https://player.vimeo.com/video/125299384','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=4|cc3300|000000'],
-    ['Market Basket & Innovation District', 42.381625, -71.100978, 5,'https://player.vimeo.com/video/124195710','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=5|cc3300|000000'],
-    ['Union Square Plaza', 42.379707, -71.094745, 6,'https://player.vimeo.com/video/125300942','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=6|cc3300|000000']
+    ['Old Post Office', 42.379628, -71.093640, 1, 'https://player.vimeo.com/video/123591383', 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|cc6666|000000'],
+    ['Parcels D2, D6', 42.378614, -71.094584, 2,'https://player.vimeo.com/video/123645660','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|cc6666|000000'],
+    ['Parcels D3, D4', 42.377290, -71.095496, 3,'https://player.vimeo.com/video/125298543','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|cc6666|000000'],
+    ['Washington St. & Somerville Ave.', 42.379834, -71.096418, 4,'https://player.vimeo.com/video/125299384','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=4|cc6666|000000'],
+    ['Market Basket & Innovation District', 42.381625, -71.100978, 5,'https://player.vimeo.com/video/124195710','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=5|cc6666|000000'],
+    ['Union Square Plaza', 42.379707, -71.094745, 6,'https://player.vimeo.com/video/125300942','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=6|cc6666|000000']
     
   ];
  var map1 = new google.maps.Map(document.getElementById('map1'), {
@@ -704,7 +704,7 @@ var locations2 = [
 
       scrollwheel: false,
       //set map styles
-      styles: [{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"saturation":"-1"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.locality","elementType":"geometry","stylers":[{"visibility":"off"},{"saturation":"1"}]},{"featureType":"administrative.neighborhood","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"},{"saturation":"28"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#66a8b8"},{"visibility":"on"}]}]
+      styles: [{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#7bc8e5"},{"saturation":"0"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#bcbcbc"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"on"},{"color":"#c2c1c1"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"administrative.land_parcel","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#b2d3e0"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"color":"#e50b0b"}]},{"featureType":"landscape.man_made","elementType":"labels.text.fill","stylers":[{"color":"#ace8fb"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#6b6262"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"color":"#545151"},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#4d4b4b"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"color":"#999797"},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"weight":"0.01"},{"saturation":"-41"},{"gamma":"0.00"},{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
     });
 
     var infowindow = new google.maps.InfoWindow();
@@ -733,7 +733,7 @@ var locations2 = [
 
       scrollwheel: false,
       //set map styles
-      styles: [{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"saturation":"-1"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.locality","elementType":"geometry","stylers":[{"visibility":"off"},{"saturation":"1"}]},{"featureType":"administrative.neighborhood","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"},{"saturation":"28"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#66a8b8"},{"visibility":"on"}]}]
+      styles: [{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#7bc8e5"},{"saturation":"0"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#bcbcbc"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"on"},{"color":"#c2c1c1"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"administrative.land_parcel","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#b2d3e0"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"color":"#e50b0b"}]},{"featureType":"landscape.man_made","elementType":"labels.text.fill","stylers":[{"color":"#ace8fb"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#6b6262"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"color":"#545151"},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#4d4b4b"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"color":"#999797"},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"weight":"0.01"},{"saturation":"-41"},{"gamma":"0.00"},{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
     });
 
     var infowindow2 = new google.maps.InfoWindow();

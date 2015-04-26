@@ -272,7 +272,11 @@ article:after {
     position:fixed;
     top:0;
 }
-
+#line {
+  text-align:center;
+  margin-left:auto; 
+  margin-right:auto
+}
 
 #community {
    -moz-box-sizing: border-box;
@@ -492,7 +496,7 @@ article:after {
   overflow: hidden;
   padding: 0;
   z-index: 1;
-  background-image: url("../images/union/somavetracks.jpg");
+  background-image: url("../images/union/mural2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -699,7 +703,12 @@ video#bgvid2 {
   background: url(../images/farmersmarket/fmstill4.jpg) no-repeat;
   background-size: cover;
 }
-
+video#scooter {
+ 
+  min-width: 100%; min-height: 10%;
+  background: url(../video/scooter/scooter.jpg) no-repeat;
+  background-size: cover;
+}
 video#busclip2 { 
   min-width: 100%; min-height: 100%;
   background: url(../video/train/busclip2still.jpg) no-repeat;
