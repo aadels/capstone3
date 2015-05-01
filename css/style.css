@@ -152,6 +152,7 @@ article:after {
   width: 100%;
   overflow: hidden;
   z-index: 100;
+  vertical-align: bottom;
 }
 
 #nav::after{
@@ -486,6 +487,21 @@ article:after {
   clear: both;
 }
 #business {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/union/mural2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#redevelopm {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
