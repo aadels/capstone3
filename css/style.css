@@ -380,26 +380,6 @@ article:after {
 }
 
 
-#maps, #housing, #transit, #market1, #market2, #market3, #train1, #train2, #train3 {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.spacerbkgd {
-  background-repeat: no-repeat;
-  height:100%;
-  width: auto;
-  overflow: hidden;
-}
-
-#market1 > div, #market2 > div, #market3 > div, #maps > div, #housing > div, #transit > div, #train1 > div, #train2 > div, #train3 > div  {
-  position: relative;
-  height: 200%;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-}
 
 #events {
    -moz-box-sizing: border-box;
@@ -463,7 +443,7 @@ article:after {
 }
 
 #trainslide{
-   -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -501,21 +481,6 @@ article:after {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#redevelopm {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
-  float: left;
-  display: -webkit-flex;
-  display: flex;
-  overflow: hidden;
-  padding: 0;
-  z-index: 1;
-  background-image: url("../images/union/mural2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #business:before, #business:after {
   content: '';
@@ -526,23 +491,44 @@ article:after {
   clear: both;
 }
 
+#redev {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/buildings/gandt.jpg");
+  background-size: cover;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+#redev:before, #redev:after {
+  content: '';
+  display: table;
+}
+
+#redev:after {
+  clear: both;
+}
+
+
  #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3 {
   position: absolute;
   height: 100%;
   width: auto;
   overflow: hidden;
 }
- #business .artlogo1{
-  position: absolute;
-  width: 25%;
-  height: auto;
-  overflow: hidden;
-}
 
-#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10 {
+#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10, #business .slidepic11 {
   position: absolute;
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
   overflow: hidden;
   bottom: 0;
 }
