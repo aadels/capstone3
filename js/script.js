@@ -741,11 +741,11 @@ $w.on("scroll", function(e){
     //redev tweens
 var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4, 
     { 
-      right: 125 + "%"
+      left: 125 + "%"
     }, 
     {
-      right: 50 + "%",
-      delay: 20,
+      left: 50 + "%",
+      delay: 25,
       ease: Cubic.easeOut
     
     });
@@ -762,10 +762,10 @@ var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4,
 
     var redevtween3 = TweenMax.staggerFromTo('#redev #traintext2', 4, 
     { 
-      left: 125 + "%"
+      right: 125 + "%"
     }, 
     {
-      left: 50 + "%",
+      right: 50 + "%",
       delay: 20,
       ease: Cubic.easeOut
     });
@@ -782,10 +782,10 @@ var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4,
 
     var redevtween5 = TweenMax.staggerFromTo('#redev #traintext3', 4, 
     {  
-      right: 125 + "%"
+      left: 125 + "%"
     }, 
     {
-      right: 50 + "%",
+      left: 50 + "%",
       delay: 20,
       ease: Cubic.easeOut  
     }); 
@@ -802,47 +802,47 @@ var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4,
 
 
 
-    var scene6a = new ScrollScene({triggerElement: '#redev', duration: 480000}) 
+    var scene6a = new ScrollScene({triggerElement: '#redev', duration: 550000}) 
       .setPin("#redev")
       .addTo(controller2);
     
-    var scene6b = new ScrollScene({triggerElement: '#redev', duration: 25000}) 
+    var scene6b = new ScrollScene({triggerElement: '#redev', duration: 50000}) 
       .setTween(redevtween1)
       .addTo(controller2);
     
-    var scene6c = new ScrollScene({triggerElement: '#redev', duration: 125000}) 
+    var scene6c = new ScrollScene({triggerElement: '#redev', duration: 150000}) 
       .setTween(redevtween2)
       .addTo(controller2);
 
-    var scene6d = new ScrollScene({triggerElement: '#redev', duration: 160000}) 
+    var scene6d = new ScrollScene({triggerElement: '#redev', duration: 185000}) 
       .setTween(redevtween3)
       .addTo(controller2);
         
-    var scene6e = new ScrollScene({triggerElement: '#redev', duration: 260000}) 
+    var scene6e = new ScrollScene({triggerElement: '#redev', duration: 285000}) 
       .setTween(redevtween4)
       .addTo(controller2);
 
-    var scene6f = new ScrollScene({triggerElement: '#redev', duration: 305000}) 
+    var scene6f = new ScrollScene({triggerElement: '#redev', duration: 315000}) 
       .setTween(redevtween5)
       .addTo(controller2);
 
-    var scene6g = new ScrollScene({triggerElement: '#redev', duration: 395000}) 
+    var scene6g = new ScrollScene({triggerElement: '#redev', duration: 455000}) 
       .setTween(redevtween6)
       .addTo(controller2);
 
     var playertween3 = TweenMax.staggerFromTo('#redevslide #playicon3', 4, 
     { 
       right: 125 + "%", 
-      bottom: 45 + "%"
+      bottom: 20 + "%"
     }, 
     {
       right: 70 + "%",
-      bottom: 45 + "%",
+      bottom: 20 + "%",
       delay: 15,
       ease: Cubic.easeOut
     });
 
-    var scene7a = new ScrollScene({triggerElement: '#redevslide', duration: 60000}) 
+    var scene7a = new ScrollScene({triggerElement: '#redevslide', duration: 100000}) 
       .setPin("#redevslide")
       .addTo(controller2);
 
@@ -851,7 +851,7 @@ var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4,
       .addTo(controller2);
 
 
-    var scene9 = new ScrollScene({triggerElement: '#tour1', duration: 5000}) 
+    var scene9 = new ScrollScene({triggerElement: '#tour1', duration: 10000}) 
           .setPin("#tour1")
           .addTo(controller2);
 
