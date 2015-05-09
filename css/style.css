@@ -466,6 +466,32 @@ article:after {
 #trainslide:after {
   clear: both;
 }
+
+#redevslide{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/titlewalls/cbatitle.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#redevlide:before, #events:after {
+  content: '';
+  display: table;
+}
+
+#redevslide:after {
+  clear: both;
+}
+
 #business {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -502,7 +528,7 @@ article:after {
   overflow: hidden;
   padding: 0;
   z-index: 1;
-  background-image: url("../images/buildings/gandt.jpg");
+  background-image: url("../images/people/somerstreets.jpg");
   background-size: cover;
   bottom: 0;
   background-repeat: no-repeat;
@@ -518,22 +544,32 @@ article:after {
 }
 
 
- #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3 {
+ #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, 
+ #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3, 
+ #redev #traintext1, #redev #traintext2, #redev #traintext3{
   position: absolute;
   height: 100%;
   width: auto;
   overflow: hidden;
 }
 
-#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, #train .colorpic4,  #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10, #business .slidepic11 {
+#community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, 
+#business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10, #business .slidepic11, 
+#business .slidepic14, #business .slidepic15, #redev .slidepic16, #redev .slidepic17, #redev .slidepic18, #redev .slidepic21,  #redev .slidepic22, #redev .slidepic23{
   position: absolute;
   height: 100%;
   width: auto;
   overflow: hidden;
   bottom: 0;
 }
+#business .slidepic12, #redev .slidepic20{
+  position: absolute;
+  height: 50%;
+  width: auto;
+  overflow: hidden;
+}
 
-#business .slidepic6{
+#business .slidepic6, #business .slidepic13, #redev .slidepic19 {
   position: absolute;
   width: 100%;
   height: auto;
@@ -548,7 +584,7 @@ article:after {
 }
 
 
-img#playicon, img#playicon2 {
+img#playicon, img#playicon2, img#playicon3, img#playicon4 {
   position: absolute;
 }
 #events .text{

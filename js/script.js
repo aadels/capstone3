@@ -12,10 +12,13 @@ $(function() {
   $('.fullwidth').css('width', wwidth);
   $('.50height').css('height', wheight * .50);
   $('.50width').css('width', wwidth * .50);
+  $('.75width').css('width', wwidth * .75);
+
   $('.15width').css('width', wwidth * .15);
   $('.panelpic').css('width', wwidth * .25);
   $('#mainlogo').css('width', wwidth * .30);
-
+  $('#width').text(wwidth);
+  $('#height').text(wheight);
 
 
   $(window).resize(function() {
@@ -25,6 +28,7 @@ $(function() {
   $('.fullwidth').css('width', wwidth);
   $('.50height').css('height', wheight * .50);
   $('.50width').css('width', wwidth * .50);
+  $('.75width').css('width', wwidth * .75);
   $('.15width').css('width', wwidth * .15);
   $('.panelpic').css('width', wwidth * .25);
   $('#mainlogo').css('width', wwidth * .30);
@@ -573,9 +577,61 @@ $w.on("scroll", function(e){
       delay: 40,
       ease: Cubic.easeOut
     });
+
+    var buildingtween7 = TweenMax.staggerFromTo('#business .slidepic12', 10, 
+    { 
+      right: 125 + "%" 
+    }, 
+    {
+      right: 0 + "%",
+      delay: 45,
+      ease: Cubic.easeOut
+    });
+
+    var buildingtween8 = TweenMax.staggerFromTo('#business .slidepic13', 15, 
+   { 
+      right: 0 + "%",
+      bottom: -200 + "%" 
+    }, 
+    {
+      right: 0 + "%",
+      bottom: 101 + "%",
+      delay: 45,
+      ease: Cubic.easeOut
+    });
+    var buildingtween9 = TweenMax.staggerFromTo('#business .slidepic14', 15, 
+   { 
+      left: 125 + "%"
+    }, 
+    {
+      left: -101 + "%",
+      delay: 45,
+      ease: Cubic.easeOut
+    });
+    var biztween = TweenMax.staggerFromTo('#business .slidepic15', 15,  
+    { 
+      right: 125 + "%" 
+    }, 
+    {
+      right: 0 + "%",
+      delay: 45,
+      ease: Cubic.easeOut
+    });
+
+    var playertween3 = TweenMax.staggerFromTo('#business #playicon3', 7, 
+    { 
+      right: 125 + "%", 
+      bottom: 30 + "%"
+    }, 
+    {
+      right: 70 + "%",
+      bottom: 30 + "%",
+      delay: 65,
+      ease: Cubic.easeOut
+    });
   
     //Create scenes, set pins, trigger when images are visible, and add to controller
-    var scene5 = new ScrollScene({triggerElement: '#business', duration: 1800000}) 
+    var scene5 = new ScrollScene({triggerElement: '#business', duration: 2900000}) 
       .setPin("#business")
       .addTo(controller2);
 
@@ -661,19 +717,141 @@ $w.on("scroll", function(e){
       .setTween(buildingtween6)
       .addTo(controller2);
     
+    var scene5w = new ScrollScene({triggerElement: '#business', duration: 1110000}) 
+      .setTween(buildingtween7)
+      .addTo(controller2);
+
+    var scene5x = new ScrollScene({triggerElement: '#business', duration: 1500000}) 
+      .setTween(buildingtween8)
+      .addTo(controller2);
+
+    var scene5y = new ScrollScene({triggerElement: '#business', duration: 1900000}) 
+      .setTween(buildingtween9)
+      .addTo(controller2);
+
+    var scene5z = new ScrollScene({triggerElement: '#business', duration: 2300000}) 
+      .setTween(biztween)
+      .addTo(controller2);
+
+    var scene5z2 = new ScrollScene({triggerElement: '#business', duration: 2390000}) 
+      .setTween(playertween3)
+      .addTo(controller2);
+
 
     //redev tweens
+var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4, 
+    { 
+      right: 125 + "%"
+    }, 
+    {
+      right: 50 + "%",
+      delay: 20,
+      ease: Cubic.easeOut
+    
+    });
+
+    var redevtween2 = TweenMax.staggerFromTo('#redev .slidepic17', 4, 
+    { 
+      left: 125 + "%" 
+    }, 
+    {
+      left: 0 + "%",
+      delay: 25,
+      ease: Cubic.easeOut
+    });
+
+    var redevtween3 = TweenMax.staggerFromTo('#redev #traintext2', 4, 
+    { 
+      left: 125 + "%"
+    }, 
+    {
+      left: 50 + "%",
+      delay: 20,
+      ease: Cubic.easeOut
+    });
+
+    var redevtween4 = TweenMax.staggerFromTo('#redev .slidepic22', 4, 
+    { 
+      right: 125 + "%"
+    }, 
+    {
+      right: 0 + "%",
+      delay: 25,
+      ease: Cubic.easeOut
+    }); 
+
+    var redevtween5 = TweenMax.staggerFromTo('#redev #traintext3', 4, 
+    {  
+      right: 125 + "%"
+    }, 
+    {
+      right: 50 + "%",
+      delay: 20,
+      ease: Cubic.easeOut  
+    }); 
+
+    var redevtween6 = TweenMax.staggerFromTo('#redev .slidepic21', 6, 
+    { 
+      left: 125 + "%"
+    }, 
+    {
+      left: 0 + "%",
+      delay: 25,
+      ease: Cubic.easeOut
+    }); 
 
 
 
-    var scene6 = new ScrollScene({triggerElement: '#redev', duration: 200000}) 
-          .setPin("#redev")
-          .addTo(controller2);
+    var scene6a = new ScrollScene({triggerElement: '#redev', duration: 480000}) 
+      .setPin("#redev")
+      .addTo(controller2);
+    
+    var scene6b = new ScrollScene({triggerElement: '#redev', duration: 25000}) 
+      .setTween(redevtween1)
+      .addTo(controller2);
+    
+    var scene6c = new ScrollScene({triggerElement: '#redev', duration: 125000}) 
+      .setTween(redevtween2)
+      .addTo(controller2);
+
+    var scene6d = new ScrollScene({triggerElement: '#redev', duration: 160000}) 
+      .setTween(redevtween3)
+      .addTo(controller2);
+        
+    var scene6e = new ScrollScene({triggerElement: '#redev', duration: 260000}) 
+      .setTween(redevtween4)
+      .addTo(controller2);
+
+    var scene6f = new ScrollScene({triggerElement: '#redev', duration: 305000}) 
+      .setTween(redevtween5)
+      .addTo(controller2);
+
+    var scene6g = new ScrollScene({triggerElement: '#redev', duration: 395000}) 
+      .setTween(redevtween6)
+      .addTo(controller2);
+
+    var playertween3 = TweenMax.staggerFromTo('#redevslide #playicon3', 4, 
+    { 
+      right: 125 + "%", 
+      bottom: 45 + "%"
+    }, 
+    {
+      right: 70 + "%",
+      bottom: 45 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var scene7a = new ScrollScene({triggerElement: '#redevslide', duration: 60000}) 
+      .setPin("#redevslide")
+      .addTo(controller2);
+
+    var scene7b = new ScrollScene({triggerElement: '#redevslide', duration: 25000}) 
+      .setTween(playertween3)
+      .addTo(controller2);
 
 
-
-
-    var scene7 = new ScrollScene({triggerElement: '#tour1', duration: 5000}) 
+    var scene9 = new ScrollScene({triggerElement: '#tour1', duration: 5000}) 
           .setPin("#tour1")
           .addTo(controller2);
 
