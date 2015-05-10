@@ -594,7 +594,7 @@ article:after {
 
  #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, 
  #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3, 
- #redev #traintext1, #redev #traintext2, #redev #traintext3{
+ #redev #redevtext1, #redev #redevtext2, #redev #redevtext3{
   position: absolute;
   height: 100%;
   width: auto;
@@ -639,7 +639,7 @@ img#playicon1{
 
 img#playicon2{
   position: absolute;
-  bottom: 45%;
+  bottom: 15%;
   left: 20%;
 }
 
@@ -651,7 +651,7 @@ img#playicon3{
 
 img#playicon4{
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 20%;
 }
 

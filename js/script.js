@@ -81,6 +81,15 @@ $w.on("scroll", function(e){
     });
 
  //fluff tweens
+    var fluffdancertween = TweenMax.staggerFromTo('#community .lgpic', 5, 
+    { 
+      bottom: -150 + "%" 
+    }, 
+    {
+      bottom: 0 + "%" ,
+      ease: Cubic.easeOut
+    });
+
   var flufftween = TweenMax.staggerFromTo('#community .smpic', 5, 
     { 
       right: 20 + "%" ,
@@ -89,17 +98,8 @@ $w.on("scroll", function(e){
     }, 
     {
       right: 40 + "%",
-      bottom: 45 + "%",
+      bottom: 55 + "%",
       delay: 9, 
-      ease: Cubic.easeOut
-    });
-
-  var fluffdancertween = TweenMax.staggerFromTo('#community .lgpic', 3, 
-    { 
-      bottom: -150 + "%" 
-    }, 
-    {
-      bottom: 0 + "%" ,
       ease: Cubic.easeOut
     });
 
@@ -109,7 +109,7 @@ $w.on("scroll", function(e){
     }, 
     {
       left: 0 + "%",
-      delay: 20,
+      delay: 35,
       ease: Cubic.easeOut
     });
   
@@ -119,28 +119,28 @@ $w.on("scroll", function(e){
     }, 
     {
       bottom: 0 + "%" ,
-      delay: 24,
+      delay: 25,
       ease: Cubic.easeOut
     });
 
   ////Create scenes, set pins, trigger when images are visible, and add to controller
-  var scene1 = new ScrollScene({triggerElement: "#community", duration: 51000})
+  var scene1 = new ScrollScene({triggerElement: "#community", duration: 250000})
     .setPin("#community")
     .addTo(controller2);
 
-  var scene1b = new ScrollScene({triggerElement: '#community', duration: 15200}) 
+  var scene1b = new ScrollScene({triggerElement: '#community', duration: 70200}) 
     .setTween(fluffdancertween)
     .addTo(controller2);
 
-  var scene1a = new ScrollScene({triggerElement: '#community', duration: 18600}) 
+  var scene1a = new ScrollScene({triggerElement: '#community', duration: 80600}) 
     .setTween(flufftween)
     .addTo(controller2);
 
-  var scene1c = new ScrollScene({triggerElement: '#community', duration: 30000}) 
+  var scene1c = new ScrollScene({triggerElement: '#community', duration: 110000}) 
     .setTween(fmtween1)
     .addTo(controller2);
 
-  var scene1d = new ScrollScene({triggerElement: '#community', duration: 50000}) 
+  var scene1d = new ScrollScene({triggerElement: '#community', duration: 170000}) 
     .setTween(fmtween2)
     .addTo(controller2);
 
@@ -188,29 +188,29 @@ $w.on("scroll", function(e){
     });
 
 
-    var scene2a = new ScrollScene({triggerElement: '#events', duration: 150000}) 
+    var scene2a = new ScrollScene({triggerElement: '#events', duration: 250000}) 
       .setPin("#events")
       .addTo(controller2);
     
-    var scene2b = new ScrollScene({triggerElement: '#events', duration: 15000}) 
+    var scene2b = new ScrollScene({triggerElement: '#events', duration: 60000}) 
       .setTween(snowtween1)
       .addTo(controller2);
 
-    var scene2c = new ScrollScene({triggerElement: '#events', duration: 25000}) 
+    var scene2c = new ScrollScene({triggerElement: '#events', duration: 110000}) 
       .setTween(snowtween2)
       .addTo(controller2);
 
-    var scene2d = new ScrollScene({triggerElement: '#events', duration: 35000}) 
+    var scene2d = new ScrollScene({triggerElement: '#events', duration: 140000}) 
       .setTween(snowtween3)
       .addTo(controller2);
         
-    var scene2e = new ScrollScene({triggerElement: '#events', duration: 45000}) 
+    var scene2e = new ScrollScene({triggerElement: '#events', duration: 170000}) 
       .setTween(snowtween4)
       .addTo(controller2);
 
 
     //video 1 title slide (We love Union Square)
-    var scene3= new ScrollScene({triggerElement: '#unionslide', duration: 100000}) 
+    var scene3= new ScrollScene({triggerElement: '#unionslide', duration: 150000}) 
       .setPin("#unionslide")
       .addTo(controller2);
 
@@ -307,7 +307,7 @@ $w.on("scroll", function(e){
       .addTo(controller2);
 
     //video 2 title slide (Train Coming)
-    var scene5a = new ScrollScene({triggerElement: '#trainslide', duration: 70000}) 
+    var scene5a = new ScrollScene({triggerElement: '#trainslide', duration: 150000}) 
       .setPin("#trainslide")
       .addTo(controller2);
 
@@ -559,68 +559,68 @@ $w.on("scroll", function(e){
     });
     
     //Create scenes, set pins, trigger when images are visible, and add to controller
-    var scene6 = new ScrollScene({triggerElement: '#business', duration: 2100000}) 
+    var scene6 = new ScrollScene({triggerElement: '#business', duration: 2000000}) 
       .setPin("#business")
       .addTo(controller2);
 
-    var scene6a = new ScrollScene({triggerElement: '#business', duration: 56000}) 
+    var scene6a = new ScrollScene({triggerElement: '#business', duration: 106000}) 
       .setTween(colortween1)
       .addTo(controller2);
 
-    var scene6b = new ScrollScene({triggerElement: '#business', duration: 69000}) 
+    var scene6b = new ScrollScene({triggerElement: '#business', duration: 119000}) 
       .setTween(slidetween1)
       .addTo(controller2);
 
-    var scene6c = new ScrollScene({triggerElement: '#business', duration: 84000}) 
+    var scene6c = new ScrollScene({triggerElement: '#business', duration: 134000}) 
       .setTween(colortween2)
       .addTo(controller2);
 
-    var scene6d = new ScrollScene({triggerElement: '#business', duration: 120000}) 
+    var scene6d = new ScrollScene({triggerElement: '#business', duration: 180000}) 
       .setTween(bwtween1)
       .addTo(controller2);
 
 
-    var scene6e = new ScrollScene({triggerElement: '#business', duration: 125000}) 
+    var scene6e = new ScrollScene({triggerElement: '#business', duration: 175000}) 
       .setTween(bwtween2)
       .addTo(controller2);
 
-    var scene6f = new ScrollScene({triggerElement: '#business', duration: 130000}) 
+    var scene6f = new ScrollScene({triggerElement: '#business', duration: 180000}) 
       .setTween(bwtween3)
       .addTo(controller2);
 
-    var scene6g = new ScrollScene({triggerElement: '#business', duration: 135000}) 
+    var scene6g = new ScrollScene({triggerElement: '#business', duration: 185000}) 
       .setTween(bwtween4)
       .addTo(controller2);
 
-    var scene6h = new ScrollScene({triggerElement: '#business', duration: 180000}) 
+    var scene6h = new ScrollScene({triggerElement: '#business', duration: 280000}) 
       .setTween(amestween1)
       .addTo(controller2);
 
-    var scene6i = new ScrollScene({triggerElement: '#business', duration: 220000}) 
+    var scene6i = new ScrollScene({triggerElement: '#business', duration: 320000}) 
       .setTween(amestween2)
       .addTo(controller2);
 
-    var scene6j = new ScrollScene({triggerElement: '#business', duration: 223000}) 
+    var scene6j = new ScrollScene({triggerElement: '#business', duration: 323000}) 
       .setTween(amestween3)
       .addTo(controller2);
 
-    var scene6k = new ScrollScene({triggerElement: '#business', duration: 226000}) 
+    var scene6k = new ScrollScene({triggerElement: '#business', duration: 326000}) 
       .setTween(amestween4)
       .addTo(controller2);
 
-    var scene6l = new ScrollScene({triggerElement: '#business', duration: 229000}) 
+    var scene6l = new ScrollScene({triggerElement: '#business', duration: 329000}) 
       .setTween(amestween5)
       .addTo(controller2);
 
-    var scene6m = new ScrollScene({triggerElement: '#business', duration: 284000}) 
+    var scene6m = new ScrollScene({triggerElement: '#business', duration: 334000}) 
       .setTween(buildingtween1)
       .addTo(controller2);
 
-    var scene6n = new ScrollScene({triggerElement: '#business', duration: 330000}) 
+    var scene6n = new ScrollScene({triggerElement: '#business', duration: 380000}) 
       .setTween(arttween1)
       .addTo(controller2);
 
-    var scene6p = new ScrollScene({triggerElement: '#business', duration: 415000}) 
+    var scene6p = new ScrollScene({triggerElement: '#business', duration: 465000}) 
       .setTween(arttween2)
       .addTo(controller2);
 
@@ -664,7 +664,7 @@ $w.on("scroll", function(e){
 
 
     //redev tweens
-    var redevtween1 = TweenMax.staggerFromTo('#redev #traintext1', 4, 
+    var redevtween1 = TweenMax.staggerFromTo('#redev #redevtext1', 4, 
     { 
       left: 125 + "%"
     }, 
@@ -685,7 +685,7 @@ $w.on("scroll", function(e){
       ease: Cubic.easeOut
     });
 
-    var redevtween3 = TweenMax.staggerFromTo('#redev #traintext2', 4, 
+    var redevtween3 = TweenMax.staggerFromTo('#redev #redevtext2', 4, 
     { 
       right: 125 + "%"
     }, 
@@ -705,7 +705,7 @@ $w.on("scroll", function(e){
       ease: Cubic.easeOut
     }); 
 
-    var redevtween5 = TweenMax.staggerFromTo('#redev #traintext3', 4, 
+    var redevtween5 = TweenMax.staggerFromTo('#redev #redevtext3', 4, 
     {  
       left: 125 + "%"
     }, 
