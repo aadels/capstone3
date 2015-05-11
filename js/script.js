@@ -99,7 +99,7 @@ $w.on("scroll", function(e){
     {
       right: 40 + "%",
       bottom: 55 + "%",
-      delay: 9, 
+      delay: 10, 
       ease: Cubic.easeOut
     });
 
@@ -119,28 +119,28 @@ $w.on("scroll", function(e){
     }, 
     {
       bottom: 0 + "%" ,
-      delay: 25,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
   ////Create scenes, set pins, trigger when images are visible, and add to controller
-  var scene1 = new ScrollScene({triggerElement: "#community", duration: 250000})
+  var scene1 = new ScrollScene({triggerElement: "#community", duration: 350000})
     .setPin("#community")
     .addTo(controller2);
 
-  var scene1b = new ScrollScene({triggerElement: '#community', duration: 70200}) 
+  var scene1b = new ScrollScene({triggerElement: '#community', duration: 80200}) 
     .setTween(fluffdancertween)
     .addTo(controller2);
 
-  var scene1a = new ScrollScene({triggerElement: '#community', duration: 80600}) 
+  var scene1a = new ScrollScene({triggerElement: '#community', duration: 95600}) 
     .setTween(flufftween)
     .addTo(controller2);
 
-  var scene1c = new ScrollScene({triggerElement: '#community', duration: 110000}) 
+  var scene1c = new ScrollScene({triggerElement: '#community', duration: 200000}) 
     .setTween(fmtween1)
     .addTo(controller2);
 
-  var scene1d = new ScrollScene({triggerElement: '#community', duration: 170000}) 
+  var scene1d = new ScrollScene({triggerElement: '#community', duration: 300000}) 
     .setTween(fmtween2)
     .addTo(controller2);
 
@@ -152,7 +152,7 @@ $w.on("scroll", function(e){
     }, 
     {
       left: 0 + "%",
-      delay: 16,
+      delay: 20,
       ease: Cubic.easeOut
     });
 
@@ -162,7 +162,7 @@ $w.on("scroll", function(e){
     }, 
     {
       right: 25 + "%" ,
-      delay: 15,
+      delay: 20,
       ease: Cubic.easeOut
     });
     var snowtween3 = TweenMax.staggerFromTo('#events .snowpic3', 2, 
@@ -171,7 +171,7 @@ $w.on("scroll", function(e){
     }, 
     {
       left: 25 + "%",
-      delay: 16,
+      delay: 20,
       ease: Cubic.easeOut
     });
 
@@ -183,34 +183,34 @@ $w.on("scroll", function(e){
     {
       bottom: 0 + "%",
       left: 25 + "%",
-      delay: 18,
+      delay: 20,
       ease: Cubic.easeOut
     });
 
 
-    var scene2a = new ScrollScene({triggerElement: '#events', duration: 250000}) 
+    var scene2a = new ScrollScene({triggerElement: '#events', duration: 450000}) 
       .setPin("#events")
       .addTo(controller2);
     
-    var scene2b = new ScrollScene({triggerElement: '#events', duration: 60000}) 
+    var scene2b = new ScrollScene({triggerElement: '#events', duration: 120000}) 
       .setTween(snowtween1)
       .addTo(controller2);
 
-    var scene2c = new ScrollScene({triggerElement: '#events', duration: 110000}) 
+    var scene2c = new ScrollScene({triggerElement: '#events', duration: 170000}) 
       .setTween(snowtween2)
       .addTo(controller2);
 
-    var scene2d = new ScrollScene({triggerElement: '#events', duration: 140000}) 
+    var scene2d = new ScrollScene({triggerElement: '#events', duration: 200000}) 
       .setTween(snowtween3)
       .addTo(controller2);
         
-    var scene2e = new ScrollScene({triggerElement: '#events', duration: 170000}) 
+    var scene2e = new ScrollScene({triggerElement: '#events', duration: 330000}) 
       .setTween(snowtween4)
       .addTo(controller2);
 
 
     //video 1 title slide (We love Union Square)
-    var scene3= new ScrollScene({triggerElement: '#unionslide', duration: 150000}) 
+    var scene3= new ScrollScene({triggerElement: '#unionslide', duration: 200000}) 
       .setPin("#unionslide")
       .addTo(controller2);
 
@@ -307,7 +307,7 @@ $w.on("scroll", function(e){
       .addTo(controller2);
 
     //video 2 title slide (Train Coming)
-    var scene5a = new ScrollScene({triggerElement: '#trainslide', duration: 150000}) 
+    var scene5a = new ScrollScene({triggerElement: '#trainslide', duration: 200000}) 
       .setPin("#trainslide")
       .addTo(controller2);
 
@@ -403,7 +403,7 @@ $w.on("scroll", function(e){
     {
       bottom: 0,
       right: 75 + "%",
-      delay: 30,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
@@ -416,7 +416,7 @@ $w.on("scroll", function(e){
     {
       top: 0 + "%" ,
       right: 50 + "%",
-      delay: 30,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
@@ -428,7 +428,7 @@ $w.on("scroll", function(e){
     {
       bottom: 0,
       right: 25 + "%",
-      delay: 30,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
@@ -440,11 +440,11 @@ $w.on("scroll", function(e){
     {
       top: 0 + "%" ,      
       right: 0 + "%",
-      delay: 30,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
-    var buildingtween1 = TweenMax.staggerFromTo('#business .slidepic4', 7, 
+    var buildingtween1 = TweenMax.staggerFromTo('#business .slidepic4',15, 
     { 
       left: 125 + "%" 
     }, 
@@ -460,19 +460,7 @@ $w.on("scroll", function(e){
     }, 
     {
       right: 0 + "%",
-      delay: 25,
-      ease: Cubic.easeOut
-    });
-
-    var arttween2 = TweenMax.staggerFromTo('#business .slidepic6', 7, 
-    { 
-      right: 0 + "%",
-      bottom: -200 + "%" 
-    }, 
-    {
-      right: 0 + "%",
-      bottom: 101 + "%",
-      delay: 25,
+      delay: 35,
       ease: Cubic.easeOut
     });
 
@@ -553,112 +541,166 @@ $w.on("scroll", function(e){
       left: 125 + "%"
     }, 
     {
-      left: -101 + "%",
+      left: -110 + "%",
       delay: 45,
       ease: Cubic.easeOut
     });
+
+    var buildingtween10 = TweenMax.staggerFromTo('#business .slidepic24', 4, 
+    { 
+      left: 125 + "%" 
+    }, 
+    {
+      left: 0 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    });
+
+    var worktween1 = TweenMax.staggerFromTo('#business #worktext1', 4, 
+    { 
+      right: 125 + "%"
+    }, 
+    {
+      right: 50 + "%",
+      delay: 25,
+      ease: Cubic.easeOut
+    
+    });
+
+    var buildingtween11 = TweenMax.staggerFromTo('#business .slidepic25', 4, 
+    { 
+      right: 125 + "%"
+    }, 
+    {
+      right: 0 + "%",
+      delay: 15,
+      ease: Cubic.easeOut
+    }); 
+
+    var worktween2  = TweenMax.staggerFromTo('#business #worktext2', 4, 
+    { 
+      left: 125 + "%"
+    }, 
+    {
+      left: 50 + "%",
+      delay: 25,
+      ease: Cubic.easeOut
+    });
+
     
     //Create scenes, set pins, trigger when images are visible, and add to controller
-    var scene6 = new ScrollScene({triggerElement: '#business', duration: 2000000}) 
+    var scene6 = new ScrollScene({triggerElement: '#business', duration: 18500000}) 
       .setPin("#business")
       .addTo(controller2);
 
-    var scene6a = new ScrollScene({triggerElement: '#business', duration: 106000}) 
+    var scene6a = new ScrollScene({triggerElement: '#business', duration: 206000}) 
       .setTween(colortween1)
       .addTo(controller2);
 
-    var scene6b = new ScrollScene({triggerElement: '#business', duration: 119000}) 
+    var scene6b = new ScrollScene({triggerElement: '#business', duration: 219000}) 
       .setTween(slidetween1)
       .addTo(controller2);
 
-    var scene6c = new ScrollScene({triggerElement: '#business', duration: 134000}) 
+    var scene6c = new ScrollScene({triggerElement: '#business', duration: 234000}) 
       .setTween(colortween2)
       .addTo(controller2);
 
-    var scene6d = new ScrollScene({triggerElement: '#business', duration: 180000}) 
+    var scene6d = new ScrollScene({triggerElement: '#business', duration: 334000}) 
       .setTween(bwtween1)
       .addTo(controller2);
 
 
-    var scene6e = new ScrollScene({triggerElement: '#business', duration: 175000}) 
+    var scene6e = new ScrollScene({triggerElement: '#business', duration: 339000}) 
       .setTween(bwtween2)
       .addTo(controller2);
 
-    var scene6f = new ScrollScene({triggerElement: '#business', duration: 180000}) 
+    var scene6f = new ScrollScene({triggerElement: '#business', duration: 344000}) 
       .setTween(bwtween3)
       .addTo(controller2);
 
-    var scene6g = new ScrollScene({triggerElement: '#business', duration: 185000}) 
+    var scene6g = new ScrollScene({triggerElement: '#business', duration: 349000}) 
       .setTween(bwtween4)
       .addTo(controller2);
 
-    var scene6h = new ScrollScene({triggerElement: '#business', duration: 280000}) 
+    var scene6h = new ScrollScene({triggerElement: '#business', duration: 511000}) 
       .setTween(amestween1)
       .addTo(controller2);
 
-    var scene6i = new ScrollScene({triggerElement: '#business', duration: 320000}) 
+    var scene6i = new ScrollScene({triggerElement: '#business', duration: 911000}) 
       .setTween(amestween2)
       .addTo(controller2);
 
-    var scene6j = new ScrollScene({triggerElement: '#business', duration: 323000}) 
+    var scene6j = new ScrollScene({triggerElement: '#business', duration: 916000}) 
       .setTween(amestween3)
       .addTo(controller2);
 
-    var scene6k = new ScrollScene({triggerElement: '#business', duration: 326000}) 
+    var scene6k = new ScrollScene({triggerElement: '#business', duration: 921000}) 
       .setTween(amestween4)
       .addTo(controller2);
 
-    var scene6l = new ScrollScene({triggerElement: '#business', duration: 329000}) 
+    var scene6l = new ScrollScene({triggerElement: '#business', duration: 926000}) 
       .setTween(amestween5)
       .addTo(controller2);
 
-    var scene6m = new ScrollScene({triggerElement: '#business', duration: 334000}) 
+    var scene6m = new ScrollScene({triggerElement: '#business', duration: 1626000}) 
       .setTween(buildingtween1)
       .addTo(controller2);
 
-    var scene6n = new ScrollScene({triggerElement: '#business', duration: 380000}) 
+    var scene6n = new ScrollScene({triggerElement: '#business', duration: 1826000}) 
       .setTween(arttween1)
       .addTo(controller2);
 
-    var scene6p = new ScrollScene({triggerElement: '#business', duration: 465000}) 
-      .setTween(arttween2)
-      .addTo(controller2);
-
-    var scene6r = new ScrollScene({triggerElement: '#business', duration: 708000}) 
+    var scene6r = new ScrollScene({triggerElement: '#business', duration: 2326000}) 
       .setTween(buildingtween2)
       .addTo(controller2);
 
-    var scene6s = new ScrollScene({triggerElement: '#business', duration: 709000}) 
+    var scene6s = new ScrollScene({triggerElement: '#business', duration: 2336000}) 
       .setTween(buildingtween3)
       .addTo(controller2);
 
-    var scene6t = new ScrollScene({triggerElement: '#business', duration: 710000}) 
+    var scene6t = new ScrollScene({triggerElement: '#business', duration: 2346000}) 
       .setTween(buildingtween4)
       .addTo(controller2);
 
-    var scene6u = new ScrollScene({triggerElement: '#business', duration: 711000}) 
+    var scene6u = new ScrollScene({triggerElement: '#business', duration: 2356000}) 
       .setTween(buildingtween5)
       .addTo(controller2);
 
-    var scene6v = new ScrollScene({triggerElement: '#business', duration: 1100000}) 
+    var scene6v = new ScrollScene({triggerElement: '#business', duration: 3556000}) 
       .setTween(buildingtween6)
       .addTo(controller2);
     
-    var scene6w = new ScrollScene({triggerElement: '#business', duration: 1110000}) 
+    var scene6w = new ScrollScene({triggerElement: '#business', duration: 3776000}) 
       .setTween(buildingtween7)
       .addTo(controller2);
 
-    var scene6x = new ScrollScene({triggerElement: '#business', duration: 1500000}) 
+    var scene6x = new ScrollScene({triggerElement: '#business', duration: 5976000}) 
       .setTween(buildingtween8)
       .addTo(controller2);
 
-    var scene6y = new ScrollScene({triggerElement: '#business', duration: 1900000}) 
+    var scene6y = new ScrollScene({triggerElement: '#business', duration: 8976000}) 
       .setTween(buildingtween9)
+      .addTo(controller2);
+
+    var scene6a2 = new ScrollScene({triggerElement: '#business', duration: 10076000}) 
+      .setTween(buildingtween10)
+      .addTo(controller2);
+        
+    var scene6a3 = new ScrollScene({triggerElement: '#business', duration: 10276000}) 
+      .setTween(worktween1)
+      .addTo(controller2);
+    
+    var scene6z = new ScrollScene({triggerElement: '#business', duration:  13556000}) 
+      .setTween(buildingtween11)
+      .addTo(controller2);
+    
+    var scene6a1 = new ScrollScene({triggerElement: '#business', duration: 14556000}) 
+      .setTween(worktween2)
       .addTo(controller2);
 
     
     //Slide for video 3 (Business and Job development)
-    var scene7 = new ScrollScene({triggerElement: '#workslide', duration: 100000}) 
+    var scene7 = new ScrollScene({triggerElement: '#workslide', duration: 200000}) 
       .setPin("#workslide")
       .addTo(controller2);
 
@@ -749,11 +791,11 @@ $w.on("scroll", function(e){
       .setTween(redevtween5)
       .addTo(controller2);
 
-    var scene8g = new ScrollScene({triggerElement: '#redev', duration: 455000}) 
+    var scene8g = new ScrollScene({triggerElement: '#redev', duration: 485000}) 
       .setTween(redevtween6)
       .addTo(controller2);
 
-    var scene9a = new ScrollScene({triggerElement: '#redevslide', duration: 100000}) 
+    var scene9a = new ScrollScene({triggerElement: '#redevslide', duration: 200000}) 
       .setPin("#redevslide")
       .addTo(controller2);
 
@@ -761,9 +803,7 @@ $w.on("scroll", function(e){
       .setPin("#tour1")
       .addTo(controller2);
 
-    var scene11 = new ScrollScene({triggerElement: '#tour2', duration: 10000}) 
-      .setPin("#tour2")
-      .addTo(controller2);
+
 
 });
 
@@ -786,15 +826,7 @@ $(window).resize(function(){
     ['Participatory Planning', 42.379332, -71.094231, 10,'https://player.vimeo.com/video/125364062','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=10|cc6666|000000']
   ];
 
-var locations2 = [
-    ['Old Post Office', 42.379628, -71.093640, 1, 'https://player.vimeo.com/video/123591383', 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|cc6666|000000'],
-    ['Parcels D2, D6', 42.378614, -71.094584, 2,'https://player.vimeo.com/video/123645660','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|cc6666|000000'],
-    ['Parcels D3, D4', 42.377290, -71.095496, 3,'https://player.vimeo.com/video/125298543','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|cc6666|000000'],
-    ['Washington St. & Somerville Ave.', 42.379834, -71.096418, 4,'https://player.vimeo.com/video/125299384','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=4|cc6666|000000'],
-    ['Market Basket & Innovation District', 42.381625, -71.100978, 5,'https://player.vimeo.com/video/124195710','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=5|cc6666|000000'],
-    ['Union Square Plaza', 42.379707, -71.094745, 6,'https://player.vimeo.com/video/125300942','http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=6|cc6666|000000']
-    
-  ];
+
  var map1 = new google.maps.Map(document.getElementById('map1'), {
       zoom: 16,
       center: new google.maps.LatLng(42.379198, -71.096366), // Union Square, Somerville, MA
@@ -821,35 +853,6 @@ var locations2 = [
 
     google.maps.event.addListener(marker, 'click', function() {
     $('#mapvid1').html('<iframe style="width:100%;height:100%;" frameborder="0" src="' + this.url + '" />');
-  });
-}
-
-    var map2= new google.maps.Map(document.getElementById('map2'), {
-      zoom: 16,
-      center: new google.maps.LatLng(42.379667, -71.097154), // Union Square, Somerville, MA
-     disableDefaultUI: true,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-
-      scrollwheel: false,
-      //set map styles
-      styles: [{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#7bc8e5"},{"saturation":"0"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#bcbcbc"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"on"},{"color":"#c2c1c1"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"administrative.land_parcel","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#b2d3e0"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"color":"#e50b0b"}]},{"featureType":"landscape.man_made","elementType":"labels.text.fill","stylers":[{"color":"#ace8fb"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#caebfa"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"color":"#caebfa"},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#6b6262"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"color":"#545151"},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#4d4b4b"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"color":"#999797"},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"weight":"0.01"},{"saturation":"-41"},{"gamma":"0.00"},{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-    });
-
-    var infowindow2 = new google.maps.InfoWindow();
-
-    var marker2, i;
-
-    for (i = 0; i < locations2.length; i++) {  
-      marker2 = new google.maps.Marker({
-        position: new google.maps.LatLng(locations2[i][1], locations2[i][2]),
-        map: map2,
-        icon: locations2[i][5],
-        clickable: true,
-        url:locations2[i][4]
-      });
-    
-    google.maps.event.addListener(marker, 'click', function() {
-    $('#mapvid2').html('<iframe style="width:100%;height:100%;" frameborder="0" src="' + this.url + '" />');
   });
 }
 

@@ -12,6 +12,7 @@
 </head>
 <body>
 
+
     <!--<div class="mCustomScrollbar" data-mcs-theme="dark">-->
 
     <nav id="nav">
@@ -19,11 +20,11 @@
         <div id="upper">
           <ul>
             <li><a class="icon info" href="#opener"><span>home</span></a></li>
-            <li><a class="icon community" href="#unionvid"><span>union square</span></a></li>
-            <li><a class="icon business" href="#trainvid"><span>train</span></a></li>
-            <li><a class="icon housing" href="#workvid"><span>work</span></a></li>
-            <li><a class="icon events" href="#redevvid"><span>change</span></a></li>
-            <li><a class="icon maps" href="#tour1"><span>tours</span></a></li>
+            <li><a class="icon community" href="#unionvidplayer"><span>union square</span></a></li>
+            <li><a class="icon business" href="#trainvidplayer"><span>train</span></a></li>
+            <li><a class="icon housing" href="#workvidplayer"><span>work</span></a></li>
+            <li><a class="icon events" href="#redevvidplayer"><span>change</span></a></li>
+            <li><a class="icon maps" href="#tour1"><span>tour</span></a></li>
           </ul>
         </div><!--upper-->
         <hr id="line">
@@ -51,6 +52,8 @@
     </nav>
     <div class="navtab"></div>  
 
+
+
     
     <!--viewport pixel height and width indicator-->
     <!--<div id="viewport">
@@ -61,50 +64,55 @@
 
 
   <main id="wrapper">
-      <article class="fullheight" id="opener">
+    <article class="fullheight" id="opener">
         
-        <div class="fadeimg">
-          <img id= "opener1" class="openertext" src="images/header/openertext.png" alt="text describing website theme">  
-        </div>
-        <div class="fadeimg">
-          <img id= "opener2" class="openertext" src="images/header/openertext2.png" alt="text describing website theme">  
-        </div>
-        <div class="fadeimg">
-          <img id= "opener3" class="openertext" src="images/header/openertext3.png" alt="text describing website theme">  
-        </div>
-        <div class="fadeimg">
-          <img id= "mainlogo" class="sulogo" src="images/icons/mainlogo.png" alt="Somerville Union logo">  
-        </div>
-       <div class="fadeimg">
-          <img id="star" class=".05width" src="images/icons/redstar.png" alt="image of a red star shape">
-        </div> 
-        <div class="fadeimg">
-          <img id="scroll" class=".15width'" src="images/icons/scrolldown.png" alt="graphic indicating that user is to scroll down">
-        </div> 
-        <div class="fadeimg">
-          <img id="roads" class="" src="images/header/outline.png" alt="map image of city streets">
-        </div> 
+      <div class="fadeimg">
+        <img id= "opener1" class="openertext" src="images/header/openertext.png" alt="text describing website theme">  
+      </div>
+      
+      <div class="fadeimg">
+        <img id= "opener2" class="openertext" src="images/header/openertext2.png" alt="text describing website theme">  
+      </div>
+      
+      <div class="fadeimg">
+        <img id= "opener3" class="openertext" src="images/header/openertext3.png" alt="text describing website theme">  
+      </div>
+      
+      <div class="fadeimg">
+        <img id= "mainlogo" class="sulogo" src="images/icons/mainlogo.png" alt="Somerville Union logo">  
+      </div>
+      
+      <div class="fadeimg">
+        <img id="star" class=".05width" src="images/icons/redstar.png" alt="image of a red star shape">
+      </div> 
+      
+      <div class="fadeimg">
+        <img id="scroll" class=".15width'" src="images/icons/scrolldown.png" alt="graphic indicating that user is to scroll down">
+      </div> 
+      
+      <div class="fadeimg">
+        <img id="roads" class="" src="images/header/outline.png" alt="map image of city streets">
+      </div>
 
-        <!--<div class="opener2">
-          <img id="roadsoutline" class="fullwidth" src="images/header/roads.png"> 
-        </div>-->
 
-
-      </article>
+    </article>
 
       <article class="fullheight" id="community">   
-        <div class="smpic">
-          <img id= "fluff" class="15width" src="images/union/fluff2.png" alt="picture of a jar of Marshmallow Fluff">  
-        </div>
-        <div class="lgpic">
-            <img id= "fluffdancers" class="fullwidth" src="images/union/flufferettes.png" alt="picture of burlesque dancers">  
-        </div>
-        <div class="lgpic2"> 
-          <img id="fm1" class="fullwidth" src="images/events/rocknroll.jpg" alt="picture of people at an outdoor record sale">  
-        </div>
-        <div class="lgpic3"> 
-          <img id="fm2" class="fullwidth" src="images/farmersmarket/fm-usms1.jpg" alt="picture of people at a farmers' market">  
-        </div>
+      <div class="smpic">
+        <img id= "fluff" class="15width" src="images/union/fluff2.png" alt="picture of a jar of Marshmallow Fluff">  
+      </div>
+      
+      <div class="lgpic">
+          <img id= "fluffdancers" class="fullwidth" src="images/union/flufferettes.png" alt="picture of burlesque dancers">  
+      </div>
+      
+      <div class="lgpic2"> 
+        <img id="fm1" class="fullwidth" src="images/events/rocknroll.jpg" alt="picture of people at an outdoor record sale">  
+      </div>
+      
+      <div class="lgpic3"> 
+        <img id="fm2" class="fullwidth" src="images/farmersmarket/fm-usms1.jpg" alt="picture of people at a farmers' market">  
+      </div>
         
       </article>
           
@@ -125,12 +133,16 @@
       
       <article class="fullheight" id="unionslide">
         <div class="fullwidth"> 
-            <a href="#unionvid" class="sublime" data-autoresize="fill" data-settings="close-button-position:right" id="unionvid">
-            <img src="images/icons/playimage.png" id="playicon1" width="100" height="100" alt="image of a play button, indicating that the user can play a media file" /></a>
-            <video id="test" poster="video/testvideo/testframe.jpg" width="2000" height="1125" title="Test Video" style="display:none" data-uid="test" data-autoresize="fill"  data-settings="uid:demo-lightbox-close-button-position; autoresize:fill;" preload="none">
-              <source src="video/testvideo/testvideo.mp4" data-quality="hd" />
-              <source src="video/testvideo/testvideo.webm" data-quality="hd" />
-            </video>  
+          <a href="#unionvid" class="sublime" id="unionvidplayer" data-autoresize="fit" data-settings="close-button-position:right">
+            <img src="images/icons/playimage.png" id="playicon1" width="100" height="100" alt="image of a play button, indicating that the user can play a media file" />
+          </a>
+            <video id="unionvid" width="1280" height="720" title="We love Union Square" style="display:none" data-uid="union" data-settings="uid:demo-lightbox-close-button-position; autoresize:fit;" preload="none">
+              <source src="video/usquare/usquare.mp4" data-quality="hd" />
+              <source src="video/usquare/usquare.mp4" />
+              <source src="video/usquare/usquare.webm" data-quality="hd" />
+              <source src="video/usquare/usquare.webm" />
+              <source src="video/usquare/usquare.ogv" />
+            </video>
         </div>   
       </article>
      
@@ -139,32 +151,42 @@
         <div class="panelpic">
           <img id= "traintext1" class="traintext" src="images/header/traintext1.png" alt="text image">  
         </div>       
+        
         <div class="fullwidth"> 
           <img id="prospectcar" class="slidepic8" src="images/train/prospectcar.jpg" alt="text image">  
         </div>
+        
         <div class="panelpic">
           <img id= "traintext2" class="traintext" src="images/header/traintext2.png" alt="text image">  
         </div> 
+        
         <div class="fullwidth"> 
             <img id="50sunion" class="slidepic9" src="images/train/50sunion.jpg" alt="image of Union Square from 19505">  
         </div> 
+        
         <div class="panelpic">
           <img id= "traintext3" class="traintext" src="images/header/traintext3.png" alt="text image">  
         </div> 
+        
         <div class="fullwidth"> 
             <img id="cornerbank" class="slidepic10" src="images/union/cornerbank.jpg" alt="image of Eastern Bank Building">  
         </div> 
       </article>
     
     <article class="fullheight" id="trainslide">
-      <a href="#trainvid" class="sublime" data-autoresize="fill" data-settings="close-button-position:right" id="trainvid">
-            <img src="images/icons/playimage.png" id="playicon2" width="100" height="100" alt="image of a play button, indicating that the user can play a media file"/></a>
-            <video id="test" poster="video/testvideo/testframe.jpg" width="2000" height="1125" title="Test Video" style="display:none" data-uid="test" data-autoresize="fill"  data-settings="uid:demo-lightbox-close-button-position; autoresize:fill;" preload="none">
-              <source src="video/testvideo/testvideo.mp4" data-quality="hd" />
-              <source src="video/testvideo/testvideo.webm" data-quality="hd" />
-            </video>
+      <div class="fullwidth"> 
+        <a href="#trainvid" class="sublime" id="trainvidplayer" data-autoresize="fit" data-settings="close-button-position:right">
+          <img src="images/icons/playimage.png" id="playicon2" width="100" height="100" alt="image of a play button, indicating that the user can play a media file" />
+        </a>
+          <video id="trainvid" width="1280" height="720" title="The train is coming" style="display:none" data-uid="union" data-settings="uid:demo-lightbox-close-button-position; autoresize:fit;" preload="none">
+            <source src="video/train/train.mp4" data-quality="hd" />
+            <source src="video/train/train.mp4" />
+            <source src="video/train/train.webm" data-quality="hd" />
+            <source src="video/train/train.webm" />
+            <source src="video/train/train.ogv" />
+          </video>
+      </div>
     </article>
-
     <article class="fullheight" id="business">
 
       <div class="colorpic">
@@ -221,12 +243,8 @@
         <img id="eyemural" class="slidepic5" src="images/murals/eyemural.jpg" alt="image of mural from Somerville, MA">  
       </div>
 
-      <div class="fullwidth">
-        <img id="jefc" class="slidepic6" src="images/art/jef.jpg" alt="image of man painting a municipal electric box">  
-      </div>
-
       <div class="panelpic">
-          <img id= "angelica" class="bldgpic4" src="images/bldg/angelica.jpg" alt="image of Angelica Benatti of MAster Printing, Somerville, MA">  
+          <img id= "angelica" class="bldgpic4" src="images/bldg/angelica.jpg" alt="image of Angelica Benatti of Master Printing, Somerville, MA">  
       </div>
 
       <div class="panelpic">
@@ -254,18 +272,39 @@
       </div>
       
       <div class="fullwidth"> 
-          <img id="glxjobs" class="slidepic14" src="images/change/glxjobs.jpg" alt="image of demonstrators holding a banner">  
+        <img id="glxjobs" class="slidepic14" src="images/change/glxjobs.jpg" alt="image of demonstrators holding a banner">  
+      </div>   
+      
+      <div class="fullwidth"> 
+        <img id="machucorner" class="slidepic24" src="images/buildings/machucorner.jpg" alt="image of a block of businesses in Unon Square, Somerville">  
       </div>
+      
+      <div class="panelpic">
+        <img id= "worktext1" class="worktext" src="images/header/worktext1.png" alt="text image">  
+      </div> 
+      
+      <div class="fullwidth"> 
+        <img id="meatmarket" class="slidepic25" src="images/buildings/meatmarket.jpg" alt="image of a meat market in Union Square, Somerville"> 
+      </div>  
+
+      <div class="panelpic">
+        <img id= "worktext2" class="worktext" src="images/header/worktext2.png" alt="text image">  
+      </div>    
+
     </article>
 
     <article class="fullheight" id="workslide">
       <div class="fullwidth"> 
-          <a href="#workvid" class="sublime" data-autoresize="fill" data-settings="close-button-position:right" id="workvid">
-          <img src="images/icons/playimage.png" id="playicon3" width="100" height="100" alt="image of a play button, indicating that the user can play a media file"/></a>
-          <video id="test" poster="video/testvideo/testframe.jpg" width="2000" height="1125" title="Test Video" style="display:none" data-uid="test" data-autoresize="fill"  data-settings="uid:demo-lightbox-close-button-position; autoresize:fill;" preload="none">
-            <source src="video/testvideo/testvideo.mp4" data-quality="hd" />
-            <source src="video/testvideo/testvideo.webm" data-quality="hd" />
-          </video>  
+          <a href="#workvid" class="sublime" id="workvidplayer" data-autoresize="fit" data-settings="close-button-position:right">
+            <img src="images/icons/playimage.png" id="playicon3" width="100" height="100" alt="image of a play button, indicating that the user can play a media file" />
+          </a>
+            <video id="workvid" width="1280" height="720" title="Local business and job development" style="display:none" data-uid="work" data-settings="uid:demo-lightbox-close-button-position; autoresize:fit;" preload="none">
+              <source src="video/work/work.mp4" data-quality="hd" />
+              <source src="video/work/work.mp4" />
+              <source src="video/work/work.webm" data-quality="hd" />
+              <source src="video/work/work.webm" />
+              <source src="video/work/work.ogv" />
+            </video>
       </div> 
     </article>
 
@@ -291,12 +330,18 @@
       </div>
     </article>
     <article class="fullheight" id="redevslide">
-      <a href="#redevvid" class="sublime" data-autoresize="fill" data-settings="close-button-position:right" id="redevvid">
-            <img src="images/icons/playimage.png" id="playicon4" width="100" height="100" alt="image of a play button, indicating that the user can play a media file"/></a>
-            <video id="test" poster="video/testvideo/testframe.jpg" width="2000" height="1125" title="Test Video" style="display:none" data-uid="test" data-autoresize="fill"  data-settings="uid:demo-lightbox-close-button-position; autoresize:fill;" preload="none">
-              <source src="video/testvideo/testvideo.mp4" data-quality="hd" />
-              <source src="video/testvideo/testvideo.webm" data-quality="hd" />
+      <div class="fullwidth"> 
+        <a href="#redevvid" class="sublime" id="redevvidplayer" data-autoresize="fit" data-settings="close-button-position:right">
+            <img src="images/icons/playimage.png" id="playicon4" width="100" height="100" alt="image of a play button, indicating that the user can play a media file" />
+          </a>
+            <video id="redevvid" width="1280" height="720" title="Development with out displacement" style="display:none" data-uid="redev" data-settings="uid:demo-lightbox-close-button-position; autoresize:fit;" preload="none">
+              <source src="video/cba/cba.mp4" data-quality="hd" />
+              <source src="video/cba/cba.mp4" />
+              <source src="video/cba/cba.webm" data-quality="hd" />
+              <source src="video/cba/cba.webm" />
+              <source src="video/cba/cba.ogv" />
             </video>
+      </div>
     </article>  
       
       <article class="fullheight" id="tour1">
@@ -304,11 +349,6 @@
         <div class="map" id="mapvid1"></div>
       </article> 
 
-      <article class="fullheight" id="tour2">
-        <div class="map" id="mapvid2"></div>
-        <div class="map" id="map2"></div>
-      </article> 
-  
 </main>
 <!--</div>-->
   <script src="js/jquery-1.11.2.min.js"></script>

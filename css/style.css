@@ -594,7 +594,7 @@ article:after {
 
  #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, 
  #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3, 
- #redev #redevtext1, #redev #redevtext2, #redev #redevtext3{
+ #redev #redevtext1, #redev #redevtext2, #redev #redevtext3, #business #worktext1, #business #worktext2{
   position: absolute;
   height: 100%;
   width: auto;
@@ -603,7 +603,7 @@ article:after {
 
 #community .lgpic3, #community .lgpic2, #events .slidepic, #events .slidepic1, #events .snowpic2, #events .snowpic3, #business .colorpic1, #business .colorpic2, #business .colorpic3, 
 #business .slidepic2, #business .slidepic3, #business .slidepic4, #business .slidepic5,  #train .slidepic7, #train .slidepic8, #train .slidepic9, #train .slidepic10, #business .slidepic11, 
-#business .slidepic14, #business .slidepic15, #redev .slidepic16, #redev .slidepic17, #redev .slidepic18, #redev .slidepic21,  #redev .slidepic22, #redev .slidepic23{
+#business .slidepic14, #business .slidepic15, #redev .slidepic16, #redev .slidepic17, #redev .slidepic18, #redev .slidepic21,  #redev .slidepic22, #redev .slidepic23, #business .slidepic24, #business .slidepic25{
   position: absolute;
   height: 100%;
   width: auto;
@@ -617,12 +617,13 @@ article:after {
   overflow: hidden;
 }
 
-#business .slidepic6, #business .slidepic13, #redev .slidepic19 {
+#business .slidepic13, #redev .slidepic19 {
   position: absolute;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
+
 #train .slidepic11{
   position: absolute;
   float:left;
