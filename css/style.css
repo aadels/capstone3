@@ -591,6 +591,30 @@ article:after {
   clear: both;
 }
 
+#end {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../images/union/mural2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#end:before, #end:after {
+  content: '';
+  display: table;
+}
+
+#end:after {
+  clear: both;
+}
 
  #business .bldgpic1, #business .bldgpic2, #business .bldgpic3, #business .bldgpic4, #business .bwpic1, #business .bwpic2, #business .bwpic3, #business .bwpic4, 
  #business .amespic1, #business .amespic2, #business .amespic3, #business .amespic4, #events .snowpic4, #train #traintext1, #train #traintext2, #train #traintext3, 

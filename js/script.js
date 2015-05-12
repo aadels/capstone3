@@ -589,7 +589,7 @@ $w.on("scroll", function(e){
 
     
     //Create scenes, set pins, trigger when images are visible, and add to controller
-    var scene6 = new ScrollScene({triggerElement: '#business', duration: 18500000}) 
+    var scene6 = new ScrollScene({triggerElement: '#business', duration: 20000000}) 
       .setPin("#business")
       .addTo(controller2);
 
@@ -678,29 +678,29 @@ $w.on("scroll", function(e){
       .setTween(buildingtween8)
       .addTo(controller2);
 
-    var scene6y = new ScrollScene({triggerElement: '#business', duration: 8976000}) 
+    var scene6y = new ScrollScene({triggerElement: '#business', duration:  8976000}) 
       .setTween(buildingtween9)
       .addTo(controller2);
 
-    var scene6a2 = new ScrollScene({triggerElement: '#business', duration: 10076000}) 
+    var scene6a2 = new ScrollScene({triggerElement: '#business', duration: 9676000}) 
       .setTween(buildingtween10)
       .addTo(controller2);
         
-    var scene6a3 = new ScrollScene({triggerElement: '#business', duration: 10276000}) 
+    var scene6a3 = new ScrollScene({triggerElement: '#business', duration: 9906000}) 
       .setTween(worktween1)
       .addTo(controller2);
     
-    var scene6z = new ScrollScene({triggerElement: '#business', duration:  13556000}) 
+    var scene6z = new ScrollScene({triggerElement: '#business', duration:  15656000}) 
       .setTween(buildingtween11)
       .addTo(controller2);
     
-    var scene6a1 = new ScrollScene({triggerElement: '#business', duration: 14556000}) 
+    var scene6a1 = new ScrollScene({triggerElement: '#business', duration: 16656000}) 
       .setTween(worktween2)
       .addTo(controller2);
 
     
     //Slide for video 3 (Business and Job development)
-    var scene7 = new ScrollScene({triggerElement: '#workslide', duration: 200000}) 
+    var scene7 = new ScrollScene({triggerElement: '#workslide', duration: 300000}) 
       .setPin("#workslide")
       .addTo(controller2);
 
